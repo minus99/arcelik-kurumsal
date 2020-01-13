@@ -1,0 +1,107 @@
+//ABSTRACTS
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+//BASE
+/* autoprefixer grid: off */
+@import 'base/typography';
+@import 'base/icons';
+@import 'base/animations';
+@import 'base/global';
+
+//COMPONENTS
+@import 'components/button';
+@import 'components/form';
+@import 'components/popup';
+@import 'components/swiper';
+@import 'components/tab';
+@import 'components/banner';
+@import 'components/countdown';
+@import 'components/threesixty';
+@import 'components/toastr';
+@import 'components/instagram-feed';
+@import 'components/breadcrumb';
+@import 'components/category';
+@import 'components/filter';
+@import 'components/sort';
+@import 'components/paging';
+@import 'components/order-step';
+@import 'components/grid-table';
+@import 'components/content';
+
+//HEADER
+@import 'layout/header/header';
+@import 'layout/header/menu';
+@import 'layout/header/top-menu';
+@import 'layout/header/mini-search';
+
+//FOOTER
+@import 'layout/footer/footer';
+@import 'layout/footer/bulletin';
+@import 'layout/footer/mini-contact';
+@import 'layout/footer/social';
+@import 'layout/footer/footer-menu';
+@import 'layout/footer/other-platforms';
+@import 'layout/footer/bottom-links';
+@import 'layout/footer/copyright';
+
+//PAGES
+@import 'layout/pages/home';
+@import 'layout/pages/product-list';
+@import 'layout/pages/product-detail';
+@import 'layout/pages/search';
+@import 'layout/pages/hierarchy';
+@import 'layout/pages/404';
+
+//DESKTOP
+@supports (display: grid) {
+    @include setMediaScreen(min-width, $breakpoint-medium) {
+        //BASE
+        @import 'base/global-desktop';
+        
+        //COMPONENTS
+        @import 'components/button-desktop';
+        @import 'components/form-desktop';
+        @import 'components/swiper-desktop';
+        @import 'components/banner-desktop';
+        @import 'components/breadcrumb-desktop';
+        @import 'components/category-desktop';
+        @import 'components/filter-desktop';
+        @import 'components/sort-desktop';
+        @import 'components/paging-desktop';
+        @import 'components/order-step-desktop';
+        @import 'components/grid-table-desktop';
+        @import 'components/content-desktop';
+
+        //HEADER
+        @import 'layout/header/header-desktop';
+        @import 'layout/header/menu-desktop';
+        @import 'layout/header/top-menu-desktop';
+        @import 'layout/header/mini-search-desktop';
+        @import 'layout/header/logo-desktop';
+
+        //FOOTER
+        @import 'layout/footer/footer-desktop';
+        @import 'layout/footer/bulletin-desktop';
+        @import 'layout/footer/bottom-links-desktop';
+        @import 'layout/footer/copyright-desktop';
+
+        //PAGES
+        @import 'layout/pages/home-desktop';
+        @import 'layout/pages/product-list-desktop';
+        @import 'layout/pages/product-detail-desktop';
+        @import 'layout/pages/search-desktop';
+        @import 'layout/pages/hierarchy-desktop';
+        @import 'layout/pages/campaign-desktop';
+        @import 'layout/pages/404-desktop';
+        
+        //DESKTOP MINI
+        @include setMediaScreen(max-width, $breakpoint-large) {
+            //HEADER
+            @import 'layout/header/header-desktop-mini';
+        }
+    }
+}
+
+//go go go
+@import 'base/css-loaded';
