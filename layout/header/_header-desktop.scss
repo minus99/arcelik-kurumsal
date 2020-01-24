@@ -1,0 +1,60 @@
+.site-header{
+    .header-center{
+        box-shadow: 0 0 10px $color3;
+        height:78px;
+        .header-logo{
+            width:200px;
+            img{
+                width:150px;
+                margin-top:0px;
+            }
+        }
+        .header-menu{
+            width:calc(100% - 700px);
+            display: flex;
+            align-items: center;
+            height:100%;
+            ul.lvl-1{
+                display: flex;
+                > li{
+                    font-weight: 500;
+                    margin-right:10px;
+                    font-size:17px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .header-info{
+            width:500px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .header-right-info{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .search-btn{
+                    margin-right:10px;
+                }
+                .bid-btn{
+                    cursor: pointer;
+                    color:$color4;
+                    border:2px solid $color1;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    min-width:150px;
+                    text-align: center;
+                    padding:10px;
+                    border-radius: 6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    i{
+                        font-size:25px;
+                        margin-right:5px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -70,6 +70,10 @@ iframe {
     min-height: 1500px;
 }
 
+.ems-none{
+    display: none !important;
+}
+
 //EMOS FRAMEWORK
 .ems {
     //HIDDEN
@@ -105,7 +109,9 @@ iframe {
     
     //CONTAINER
     &-container {
-        width: calc(100% - #{$container-gap * 2}) !important;
+        width: 100% !important;
+        padding-left:15px;
+        padding-right:15px;
         margin-left: auto;
         margin-right: auto;
         
@@ -315,6 +321,29 @@ iframe {
         }
     }
 }
+
+
+.mns-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-between{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-start{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &-end{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
 
 //unneeded objects
 .ayiracDefault,

@@ -88,4 +88,28 @@
             text-align: right;
         }
     }
+
+        //CONTAINER
+        &-container {
+            width: 100% !important;
+            padding-left:80px;
+            padding-right:80px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            &-full {
+                width: 100% !important;
+            }
+            
+            &-large {
+                max-width: $container-large;
+            }
+            &-medium {
+                max-width: $container-medium;
+            }
+            &-small {
+                max-width: $container-small;
+            }
+        }
+    
 }

@@ -1,0 +1,210 @@
+.ems-obj-required{
+    display: none;
+}
+
+.mini-search-ready{
+    overflow: hidden;
+    .mini-search{
+        &-sub{
+            display: flex;
+        }
+    }
+}
+
+.mini-search-animate{
+    .mini-search{
+        &-sub{
+            top:50px;
+        }
+    }
+}
+
+.mini-search-keyup{
+    .mini-search{
+        &-sub{
+            align-items: flex-start;
+            padding-top:45px;
+            .search-title-mobile{
+                visibility: hidden;
+                opacity: 0;
+                height: 0px;
+            }
+        }
+    }
+}
+
+.mini-search{
+    display: flex;
+    &-info{
+        order:2;
+        z-index: 11;
+        cursor: pointer;
+        > span{
+            display: block;
+            i{
+                display:inline-block;
+                margin-top:7px;
+                margin-right:10px;
+            }
+        }
+    }
+    &-sub{
+        display:none;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width:100%;
+        height:100%;
+        left:0;
+        top:-100%;
+        order:1;
+        background: $color2;
+        transition: top .4s;
+        z-index: 5;
+        .search-title-mobile{
+            text-align: center;
+            font-weight: 300;
+            transition: all .4s;
+            height:195px;
+            overflow: hidden;
+            span{
+                &:first-child{
+                    font-size:30px;
+                    margin-bottom:25px;
+                    display: block;
+                }
+                &:nth-child(2){
+                    font-size:18px;
+                }
+            }
+        }
+        .search-input{
+            display: flex;
+            input{
+                border:none;
+                background: none;
+                border-bottom:1px solid $color3;
+                font-size:34px;
+                font-weight: 300;
+            }
+            > a{
+                background: none;
+                color:$color1;
+            }
+            .searchSuggestDiv{
+                overflow-y:hidden;
+                height: 600px;
+                background: $color2;
+                border-radius: 5px;
+                box-shadow: -3px 3px 15px 0 rgba(103, 103, 103, 0.29);
+                width:100% !important;
+                top:43px;
+                padding:30px 15px;
+                .searchSuggestDivHolder{
+                    display: flex;
+                    flex-wrap: wrap;
+                    > div{
+                        width:100%;
+                    }
+                    .cat{
+                        order:1;
+                        h3{
+                            font-weight: bold;
+                            font-size:18px;
+                        }
+                        .sHolder{
+                            max-height:150px;
+                            overflow-y: scroll;
+                            > div{
+                                margin:15px 0px;
+                                font-size:15px;
+                            }
+                        }
+                    }
+                    .prd{
+                        margin-top:15px;
+                        order:2;
+                        h3{
+                            font-size:18px;
+                            font-weight: bold;
+                            small{
+                                display: none;
+                            }
+                        }
+                        .sHolder{
+                            margin-top:15px;
+                            max-height:300px;
+                            overflow-y: scroll;
+                            > div{
+                                border:1px solid transparent;
+                                border-top:1px solid $color5;
+                                padding-left:15px;
+                                transition: all .3s;
+                                cursor: pointer !important;
+                                &:first-child{
+                                    border-top:1px solid transparent;
+                                }
+                                &:hover{
+                                    border-radius: 5px;
+                                    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.31);
+                                    border: solid 1px #b51f2a;
+                                    > table{
+                                        > tbody{
+                                            > tr{
+                                                .suggest_urnsname_con{
+                                                    b , span{
+                                                        font-weight: bold;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                > table{
+                                    > tbody{
+                                        > tr{
+                                            th{
+                                                width:50px;
+                                                padding:5px 0px;
+                                            }
+                                            .suggest_urnprice_con{
+                                                display: none;
+                                            }
+                                            .suggest_urnsname_con{
+                                                text-align: center;
+                                                transform: translateX(-50px);
+                                                b{
+                                                    font-weight: 500;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .dvTumunuGoster{
+                        display:flex !important;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top:40px;
+                        order:3;
+                        a.btnDefault{
+                            background: $color2;
+                            border:1px solid $color1;
+                            border-radius: 5px;
+                            color:$color1;
+                            font-weight: 500;
+                            box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.45);
+                            font-size:15px;
+                            transition: box-shadow .4s;
+                            &:hover{
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
