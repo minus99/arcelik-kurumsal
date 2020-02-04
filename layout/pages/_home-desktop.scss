@@ -24,7 +24,7 @@
         font-size:70px;
     }
     .section-desc{
-        font-size:25px;
+        //font-size:25px;
     }
 }
 
@@ -37,9 +37,8 @@
     &-item{
         width:calc(100% / 3);
         a{
-            height: 550px;
-            padding:0px 60px;
             font-size:40px;
+            padding-left:60px;
         }
         &-icon{
             margin-bottom:20px;
@@ -59,6 +58,57 @@
         li{
             width:calc(100% / 6);
             padding:0px 20px;
+        }
+    }
+}
+
+
+.referanslar{
+    justify-content: center;
+    .section-cover{
+        max-width: 100% !important;
+    }
+    &-left{
+        width:300px;
+        order:2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        ul{
+            max-width: 400px;
+            li{
+                width:100%;
+            }
+        }
+    }
+    &-right{
+        width:900px;
+        order:3;
+        .swiper-wrapper{
+            min-height: 520px;
+        }
+        .swiper-button-next , .swiper-button-prev{
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NiIgaGVpZ2h0PSI0NiIgdmlld0JveD0iMCAwIDQ2IDQ2Ij48cmVjdCB3aWR0aD0iNDYiIGhlaWdodD0iNDYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMzAuNjY3LDE3LjI1SDcuMjgzTDE4LjAxNywyNy45ODNsLTIuNjgzLDIuNjgzTDAsMTUuMzMzLDE1LjMzMywwbDIuNjgzLDIuNjgzTDcuMjgzLDEzLjQxN0gzMC42NjdWMTcuMjVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3LjY2NyA3LjY2NykiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==");
+            display: block;
+            border:1px solid $color1;
+            border-radius: 100%;
+            position: absolute;
+            bottom:-100px;
+            top:inherit;
+            background-color: $color2;
+            width:103px;
+            height:103px;
+            transition: box-shadow .4s;
+            &:hover{
+                box-shadow: none;
+            }
+        }
+        .swiper-button-prev{
+            left:55%
+        }
+        .swiper-button-next{
+            right:20%;
         }
     }
 }

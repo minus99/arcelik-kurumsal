@@ -1,4 +1,8 @@
 .site-header{
+    position: sticky;
+    top:0;
+    z-index: 100;
+    background-color: $color2;
     .header-center{
         display: flex;
         align-items: flex-start;
