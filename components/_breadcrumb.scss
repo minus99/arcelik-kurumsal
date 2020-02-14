@@ -1,7 +1,7 @@
 .navigasyon {
     position: relative;
-    width: 100vw;
-    padding: 20px;
+    width: 100%;
+    padding:20px 0px;
     font-size: 22px;
     font-weight: 700;
     overflow: hidden;
@@ -34,7 +34,7 @@
     &::after {
         content: "";
         position: absolute;
-        right: 20px;
+        right: 0px;
         top: 18px;
         @extend .base64;
         @extend .base64-plus;

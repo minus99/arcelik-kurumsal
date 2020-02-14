@@ -1,3 +1,45 @@
 .site-footer{
-    min-height: 200px;
+    background: #fdfdfd;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    margin-top:100px;
+    display: flex;
+    padding:45px 20px;
+    .footer-left{
+        width:calc(100% - 300px);
+        .footer-menu{
+            display: flex;
+            ul{
+                margin-right:100px;
+                span{
+                    font-weight: bold;
+                    margin-bottom:25px;
+                    display: block;
+                }
+                li{
+                    margin-bottom:25px;
+                    color:$color7;
+                }
+            }
+        }
+    }
+    .footer-right{
+        width:300px;
+        border-left:1px solid $color3;
+        padding-left:20px;
+        display: flex;
+        justify-content: flex-end;
+        height:100%;
+        .footer-social-menu{
+            height:380px;
+            border:1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            > *{
+                border:1px solid red;
+                display: block;
+                width:100%;
+            }
+        }
+    }
 }
