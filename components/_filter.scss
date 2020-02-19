@@ -113,11 +113,18 @@
     margin-left: -$marginl;
     font-family: $font2;
     > div {
-        background: $color10;
-        color: #000;
+        background: $color2;
+        color: $color1;
+        border:1px solid $color1;
+        border-radius: 5px;
         padding: 9px 20px 10px 10px;
         margin-left: $marginl;
         margin-top: 10px;
+        i{
+            font-size:15px;
+            margin-right:5px;
+            transform: rotate(45deg);
+        }
     }
 }
 .ozellikFiltreBaslik {
