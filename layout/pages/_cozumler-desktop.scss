@@ -1,0 +1,91 @@
+/* Entegre Projeler */ 
+
+
+.arc-entegre-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    .arc-entegre-header {
+      h2 {
+        font-size: 48px;
+      }
+      h5 {
+        display: block !important;
+      }
+      h4 {
+        display: none;
+      }
+    }
+  }
+  .arc-entegre-body {
+    width:100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    .arc-proje-container {
+      order: 1;
+      width: 280px;
+      header {
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    .arc-proje-city-container {
+      order: 2;
+      width: 764px;
+      height: 401px;
+  
+      .arc-proje-city {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .arc-entegre-tip {
+        font-size: 16px;
+      }
+    }
+    .arc-entegre-detay{
+      display:none;
+    }
+    .arc-referans-proje {
+      width: 210px;
+      height: 160px;
+      align-self: center;
+      header {
+      }
+      p {
+      }
+      .arc-referans-link {
+        .arc-referans-arrow {
+        }
+      }
+    }
+  }
+  
+
+  .referanslar{
+    .ref-projects{
+        &-title{
+          
+        }
+        &-wrapper{
+            
+        }
+        &-item{
+          width:calc(( 100% / 3 ) - 20px);
+        }
+        &-img{
+        }
+        &-icon{
+          
+        }
+        &-name{
+          
+      }
+        &-info{
+
+        }
+    }
+}
