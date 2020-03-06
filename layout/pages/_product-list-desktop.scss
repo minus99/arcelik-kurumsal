@@ -65,6 +65,9 @@
             width:300px;
             padding-left:20px;
             padding-right:30px;
+            .kutuHeaderOzellikFiltre{
+                display: none;
+            }
         }
     }
     &-right{
@@ -79,6 +82,9 @@
                     padding:0px;
                     > li{
                         width:100%;
+                        &:before{
+                            content:none;
+                        }
                         > a{
                             font-size:35px;
                         }
@@ -95,8 +101,9 @@
                                     box-shadow: none;
                                 }
                                 a{
-                                    display: block;
-                                    text-align: center;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
                                     padding:10px;
                                     font-size:20px;
                                 }

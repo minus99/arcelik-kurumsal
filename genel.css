@@ -194,6 +194,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+svg.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  vertical-align: middle;
+  font-size: 32px; }
+
 .icon-search:before {
   content: "\e905"; }
 
@@ -966,6 +976,12 @@ table[style*="inline"] {
   .anaBody > div[ondblclick][style] div {
     padding: 10px 15px;
     border-bottom: 1px solid #7b7b7b; }
+
+.icon-ekle.kapat {
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
 
 .btn,
 a.btnDefault, .urunKiyaslamaOzellik_tumunuTemizle a {
@@ -3187,7 +3203,8 @@ ul.menuKategori b {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #fff; }
+  background-color: #fff;
+  width: 100%; }
   .site-header .header-center {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3356,6 +3373,12 @@ ul.menuKategori b {
     display: -ms-flexbox;
     display: flex; }
 
+.mini-search-animate .mini-search-info > span i.icon-ekle {
+  display: block; }
+
+.mini-search-animate .mini-search-info > span i.icon-search {
+  display: none; }
+
 .mini-search-animate .mini-search-sub {
   top: 50px; }
 
@@ -3385,6 +3408,13 @@ ul.menuKategori b {
         display: inline-block;
         margin-top: 7px;
         margin-right: 10px; }
+        .mini-search-info > span i.icon-ekle {
+          margin-top: 0px;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          font-size: 30px;
+          display: none; }
   .mini-search-sub {
     display: none;
     -webkit-box-pack: center;
@@ -3393,7 +3423,7 @@ ul.menuKategori b {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
@@ -3540,6 +3570,7 @@ ul.menuKategori b {
                 box-shadow: none; }
 
 .site-footer {
+  overflow: hidden;
   background: #fdfdfd;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -3576,7 +3607,6 @@ ul.menuKategori b {
     height: 100%; }
     .site-footer .footer-right .footer-social-menu {
       height: 380px;
-      border: 1px solid red;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -3585,7 +3615,6 @@ ul.menuKategori b {
       -ms-flex-line-pack: justify;
       align-content: space-between; }
       .site-footer .footer-right .footer-social-menu > * {
-        border: 1px solid red;
         display: block;
         width: 100%; }
 
@@ -3914,6 +3943,22 @@ ul.menuKategori b {
         text-transform: uppercase;
         font-size: 12px; }
 
+.ems-prd-list-left .kutuOzellikFiltre {
+  background: #fff;
+  margin-top: 40px; }
+  .ems-prd-list-left .kutuOzellikFiltre .filter-header-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .ems-prd-list-left .kutuOzellikFiltre .urunKiyaslamaOzellik_ozellikAd {
+    background-color: #fff; }
+
 .section-cat-sub {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3991,13 +4036,6 @@ ul.emosInfinite {
     ul.emosInfinite .ems-prd-name a {
       font-weight: bold; }
 
-.ems-page-product-detail {
-  border: 1px solid red; }
-  .ems-page-product-detail-grid {
-    border: 1px solid red; }
-    .ems-page-product-detail-grid > div {
-      border: 1px solid blue; }
-
 .prd-detail-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4011,13 +4049,97 @@ ul.emosInfinite {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .prd-detail-page-left {
-    width: 100%;
-    border: 1px solid red; }
+    width: 100%; }
+    .prd-detail-page-left .swiper-slide a {
+      width: 100%;
+      display: block; }
+      .prd-detail-page-left .swiper-slide a img {
+        width: 100%; }
     .prd-detail-page-left .zoom-gallery {
       display: none; }
   .prd-detail-page-right {
-    width: 100%;
-    border: 1px solid red; }
+    width: 100%; }
+    .prd-detail-page-right .ems-prd-name {
+      font-size: 26px;
+      margin-top: 20px; }
+    .prd-detail-page-right .ems-prd-types {
+      margin-top: 30px; }
+      .prd-detail-page-right .ems-prd-types .ems-prd-colors, .prd-detail-page-right .ems-prd-types .ems-prd-texture {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        margin-bottom: 15px; }
+        .prd-detail-page-right .ems-prd-types .ems-prd-colors > .ems-prd-types-title, .prd-detail-page-right .ems-prd-types .ems-prd-texture > .ems-prd-types-title {
+          width: 100%;
+          font-size: 17px;
+          margin-bottom: 10px; }
+        .prd-detail-page-right .ems-prd-types .ems-prd-colors li, .prd-detail-page-right .ems-prd-types .ems-prd-texture li {
+          width: 23%;
+          max-width: 90px;
+          margin-right: 2%;
+          margin-bottom: 15px;
+          -webkit-transition: -webkit-box-shadow .4s;
+          transition: -webkit-box-shadow .4s;
+          -o-transition: box-shadow .4s;
+          transition: box-shadow .4s;
+          transition: box-shadow .4s, -webkit-box-shadow .4s;
+          -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6); }
+          .prd-detail-page-right .ems-prd-types .ems-prd-colors li:hover, .prd-detail-page-right .ems-prd-types .ems-prd-texture li:hover {
+            -webkit-box-shadow: none;
+            box-shadow: none; }
+          .prd-detail-page-right .ems-prd-types .ems-prd-colors li img, .prd-detail-page-right .ems-prd-types .ems-prd-texture li img {
+            width: 100%; }
+    .prd-detail-page-right .ems-prd-description {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 20px; }
+    .prd-detail-page-right .prd-detail-buttons {
+      margin-top: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start; }
+      .prd-detail-page-right .prd-detail-buttons .scroll-trigger {
+        width: 60%; }
+        .prd-detail-page-right .prd-detail-buttons .scroll-trigger > div {
+          margin-bottom: 30px; }
+          .prd-detail-page-right .prd-detail-buttons .scroll-trigger > div a {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start; }
+            .prd-detail-page-right .prd-detail-buttons .scroll-trigger > div a i {
+              font-size: 20px;
+              margin-right: 5px; }
+            .prd-detail-page-right .prd-detail-buttons .scroll-trigger > div a span {
+              text-decoration: underline; }
+      .prd-detail-page-right .prd-detail-buttons .ems-prd-offer-btn {
+        width: 40%;
+        text-align: right; }
+        .prd-detail-page-right .prd-detail-buttons .ems-prd-offer-btn a {
+          padding: 0px;
+          background-color: #b51f2a;
+          width: 100%;
+          border: none;
+          color: #fff; }
+          .prd-detail-page-right .prd-detail-buttons .ems-prd-offer-btn a i {
+            font-size: 20px;
+            margin-right: 5px; }
 
 .referanslar .ref-info {
   margin-top: 160px; }
@@ -4249,9 +4371,8 @@ ul.emosInfinite {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .cozum-sub-cats ul li {
@@ -4269,7 +4390,8 @@ ul.emosInfinite {
       transition: box-shadow .4s;
       transition: box-shadow .4s, -webkit-box-shadow .4s; }
       .cozum-sub-cats ul li a {
-        padding: 25px 0px; }
+        padding: 25px 0px;
+        display: block; }
       .cozum-sub-cats ul li:hover {
         -webkit-box-shadow: none;
         box-shadow: none; }
@@ -4483,16 +4605,12 @@ ul.emosInfinite {
       position: absolute;
       right: -24px;
       bottom: -24px;
-      width: 16px;
-      height: 16px;
+      width: 60px;
+      height: 60px;
+      padding: 16px;
       border: solid 1px #000000;
       border-radius: 32px;
-      padding: 16px;
       background-color: #ffffff; }
-      .arc-entegre-body .arc-referans-proje .arc-referans-link .arc-referans-arrow {
-        width: 100%;
-        -o-object-fit: contain;
-        object-fit: contain; }
 
 .project-detail-page {
   padding-top: 50px; }
@@ -4579,7 +4697,8 @@ ul.emosInfinite {
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 100px; }
 
 .project-detail-solution-left {
   margin-top: 30px;
@@ -4592,13 +4711,13 @@ ul.emosInfinite {
 .project-detail-solution-center {
   width: 100%;
   margin-top: 30px; }
-  .project-detail-solution-center span {
+  .project-detail-solution-center span, .project-detail-solution-center li {
     display: block;
     position: relative;
     padding-bottom: 15px;
     margin-top: 15px;
     font-size: 18px; }
-    .project-detail-solution-center span::after {
+    .project-detail-solution-center span::after, .project-detail-solution-center li::after {
       content: '';
       position: absolute;
       bottom: 0px;
@@ -5259,6 +5378,8 @@ ul.emosInfinite {
           width: 300px;
           padding-left: 20px;
           padding-right: 30px; }
+          .ems-prd-list-left .ems-prd-list-filter .kutuHeaderOzellikFiltre {
+            display: none; }
       .ems-prd-list-right {
         width: calc(100% - 350px); }
         .ems-prd-list-right .ems-prd-list-sub-cats .kutuKategori ul {
@@ -5271,6 +5392,8 @@ ul.emosInfinite {
           padding: 0px; }
           .ems-prd-list-right .ems-prd-list-sub-cats .kutuKategori ul > li {
             width: 100%; }
+            .ems-prd-list-right .ems-prd-list-sub-cats .kutuKategori ul > li:before {
+              content: none; }
             .ems-prd-list-right .ems-prd-list-sub-cats .kutuKategori ul > li > a {
               font-size: 35px; }
             .ems-prd-list-right .ems-prd-list-sub-cats .kutuKategori ul > li > ul {
@@ -5290,8 +5413,15 @@ ul.emosInfinite {
                   -webkit-box-shadow: none;
                   box-shadow: none; }
                 .ems-prd-list-right .ems-prd-list-sub-cats .kutuKategori ul > li > ul > li a {
-                  display: block;
-                  text-align: center;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
                   padding: 10px;
                   font-size: 20px; }
                 .ems-prd-list-right .ems-prd-list-sub-cats .kutuKategori ul > li > ul > li.act {
@@ -5341,7 +5471,43 @@ ul.emosInfinite {
     .prd-detail-page-left {
       width: 49%; }
     .prd-detail-page-right {
-      width: 49%; }
+      width: 49%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .prd-detail-page-right > div {
+        width: 100%; }
+      .prd-detail-page-right .ems-prd-name {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        font-size: 35px;
+        font-weight: bold; }
+      .prd-detail-page-right .ems-prd-types {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3; }
+        .prd-detail-page-right .ems-prd-types .ems-prd-colors > .ems-prd-types-title, .prd-detail-page-right .ems-prd-types .ems-prd-texture > .ems-prd-types-title {
+          font-size: 22px; }
+      .prd-detail-page-right .ems-prd-description {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 30px; }
+      .prd-detail-page-right .prd-detail-buttons {
+        -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+        order: 4;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end; }
+        .prd-detail-page-right .prd-detail-buttons .scroll-trigger > div {
+          margin-top: 25px;
+          margin-bottom: 0px; }
     .cozum-header {
       margin-bottom: 100px; }
     .cozum-title {

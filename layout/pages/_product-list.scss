@@ -83,7 +83,19 @@
 
 .ems-prd-list{
     &-left{
-        
+        .kutuOzellikFiltre{
+            //display: block;
+            background: $color2;
+            margin-top:40px;
+            .filter-header-text{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .urunKiyaslamaOzellik_ozellikAd{
+                background-color: $color2;
+            }
+        }
     }
     &-right{
         
