@@ -1,0 +1,328 @@
+.cozum {
+  &-header {
+    margin-bottom: 100px;
+  }
+
+  &-title {
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &-desc {
+    max-width: 900px;
+    text-align: center;
+    margin: 60px auto;
+    font-weight: 500;
+    font-size:25px;
+    
+  }
+
+  &-icons {
+    li {
+      width:25%;
+      img{
+        display: block;
+      }
+      span {
+        font-size:22px;
+        font-weight: 500;
+      }
+      &:after{
+        content: none;
+      }
+    }
+  }
+
+  &-sub-cats {
+    ul {
+      li {
+        width: 33%;
+        font-size: 25px;
+        a{
+          padding: 50px 0px;
+        }
+      }
+
+      .all-sub-cat-btn {
+        a {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  &-docs{
+    .docs-title{
+      margin:30px 0px;
+      font-size:35px;
+    }
+    ul{
+      li{
+        width:25%;
+        span{
+        
+        }
+      }
+      .all-docs-show-btn{
+        a{
+          font-size:30px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* Entegre Projeler */
+
+
+.arc-entegre-container {
+  max-width: 1500px;
+  margin: 0 auto;
+
+  .arc-entegre-header {
+    h2 {
+      font-size: 48px;
+    }
+
+    h5 {
+      display: block !important;
+    }
+
+    h4 {
+      display: none;
+    }
+  }
+}
+
+.arc-entegre-body {
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .arc-proje-container {
+    order: 1;
+    width: 280px;
+
+    header {}
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .arc-proje-city-container {
+    order: 2;
+    width: 764px;
+    height: 401px;
+
+    .arc-proje-city {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .arc-entegre-tip {
+      font-size: 16px;
+    }
+  }
+
+  .arc-entegre-detay {
+    display: none;
+  }
+
+  .arc-referans-proje {
+    width: 210px;
+    height: 160px;
+    align-self: center;
+
+    header {}
+
+    p {}
+
+    .arc-referans-link {
+      .arc-referans-arrow {}
+    }
+  }
+}
+
+
+.referanslar {
+  .ref-projects {
+    &-title {}
+
+    &-wrapper {}
+
+    &-item {
+      width: calc((100% / 3) - 20px);
+    }
+
+    &-img {}
+
+    &-icon {}
+
+    &-name {}
+
+    &-info {}
+  }
+
+  .ref-project-type {
+    &-left {
+      width: 49%;
+    }
+
+    &-title {
+      margin-bottom: 100px;
+      font-size: 43px;
+    }
+
+    &-desc {
+      font-size: 30px;
+    }
+
+    &-right {
+      width: 49%;
+
+      >div {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .refs-title {
+    margin: 100px 0px 50px 0px;
+    font-size: 50px;
+  }
+
+  .ref-project-item-wrapper {
+    .ref-project-item {
+      width: 49%;
+
+      span {
+        font-size: 30px;
+        display: block;
+      }
+    }
+  }
+}
+
+
+.project-detail-page {
+  max-width: $container-large;
+  margin: 0 auto;
+
+  .project-detail-slider {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
+    .referanslar-left {
+      .project-detail-name {
+        padding: 0px;
+        font-size: 40px;
+        margin-bottom: 25px;
+      }
+
+      .project-detail-desc {
+        font-size: 25px;
+        margin-bottom: 50px;
+      }
+
+      width:600px;
+
+      ul {
+        width:100%;
+      }
+    }
+
+    .referanslar-right {
+      width: 750px;
+
+      .swiper-button-prev {
+        left: 70%;
+      }
+
+      .swiper-button-next {
+        right: 0px;
+      }
+    }
+  }
+
+
+  .project-detail-solution {
+    margin-top: 150px;
+
+    &-header {
+      align-content: center;
+      position: relative;
+
+      .solution-icon {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 150px;
+        text-align: left;
+      }
+
+      .solution-title {
+        order: 1;
+        font-size: 40px;
+        width: 100%;
+      }
+
+      .solution-desc {
+        max-width: 900px;
+        margin: 30px auto;
+        font-weight: 300;
+        font-size: 23px;
+        order: 2;
+        width: 100%;
+      }
+    }
+
+    &-body {}
+
+    &-left {
+      order: 1;
+      width: 50%;
+    }
+
+    &-center {
+      order: 3;
+      width: 100%;
+
+      span {}
+    }
+
+    &-right {
+      order: 2;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+
+      ul {
+        li {}
+      }
+    }
+
+    &-footer {
+      display: block;
+      text-align: center;
+      margin: 40px 0px;
+
+      a {
+        display: block;
+        width: 100%;
+        text-decoration: underline;
+        font-size: 25px;
+        color: $color6;
+        font-weight: 300;
+      }
+    }
+  }
+
+}

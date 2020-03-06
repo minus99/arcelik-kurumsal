@@ -1,0 +1,57 @@
+.prd-detail-page{
+    &-left{
+        width: 49%;
+    }
+    &-right{
+        width: 49%;
+        display: flex;
+        flex-wrap: wrap;
+        > div{
+            width:100%;
+        }
+        .ems-prd-name{
+            order:1;
+            font-size:35px;
+            font-weight: bold;
+        }
+        .ems-prd-types{
+            order:3;
+            .ems-prd-colors , .ems-prd-texture{
+                > .ems-prd-types-title{
+                    font-size:22px;
+                }
+                li{
+
+                }
+            }
+        }
+        .ems-prd-description{
+            order:2;
+            font-size:22px;
+            line-height:30px;
+            margin-top:30px;
+        }
+        .prd-detail-buttons{
+            order:4;
+            align-items: flex-end;
+            .scroll-trigger{
+                > div{
+                    margin-top:25px;
+                    margin-bottom: 0px;
+                    a{
+                        i{                            
+                        }
+                        span{
+                            
+                        }
+                    }
+                }
+            }
+            .ems-prd-offer-btn{
+                a{
+                 
+                }
+            }
+        }
+    }
+}

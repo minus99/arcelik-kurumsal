@@ -1,0 +1,108 @@
+.ems-page-product-detail{
+    &-grid{
+        > div{
+        }
+    }
+}
+
+
+.prd-detail-page{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-left{
+        width:100%;
+        .swiper-slide{
+            a{
+                width:100%;
+                display: block;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .zoom-gallery{
+            display: none;
+        }
+    }
+    &-right{
+        width:100%;
+        .ems-prd-name{
+            font-size:26px;
+            margin-top:20px;
+        }
+        .ems-prd-types{
+            margin-top:30px;
+            .ems-prd-colors , .ems-prd-texture{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                margin-bottom:15px;
+                > .ems-prd-types-title{
+                    width:100%;
+                    font-size:17px;
+                    margin-bottom:10px;
+                }
+                li{
+                    width:23%;
+                    max-width: 90px;
+                    margin-right:2%;
+                    margin-bottom:15px;
+                    transition: box-shadow .4s;
+                    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+                    &:hover{
+                        box-shadow: none;
+                    }
+                    img{
+                        width:100%;
+                    }
+                }
+            }
+        }
+        .ems-prd-description{
+            margin-bottom: 20px;
+            font-size:14px;
+            line-height: 20px;
+        }
+        .prd-detail-buttons{
+            margin-top:30px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            .scroll-trigger{
+                width:60%;
+                > div{
+                    margin-bottom:30px;
+                    a{
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-start;
+                        i{
+                            font-size:20px;
+                            margin-right:5px;
+                        }
+                        span{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .ems-prd-offer-btn{
+                width:40%;
+                text-align: right;
+                a{
+                    padding:0px;
+                    background-color: $color4;
+                    width:100%;
+                    border:none;
+                    color:$color2;
+                    i{
+                        font-size:20px;
+                        margin-right: 5px;
+                    }  
+                }
+            }
+        }
+    }
+}

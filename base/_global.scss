@@ -550,3 +550,10 @@ table[style*="inline"] {
         border-bottom: 1px solid #7b7b7b;
     }
 }
+
+.icon-ekle{
+    &.kapat{
+        display: inline-block;
+        transform: rotate(45deg);
+    }
+}
