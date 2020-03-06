@@ -1,0 +1,39 @@
+.arcelik-contact {
+    .d-ems-flex {
+        padding: 0 40px;
+        .col1,
+        .col2,
+        .col3,
+        .col4 {
+            width: 25%;
+        }
+        .col1 {
+            .ems-field {
+                span {
+                    display: block !important;
+                }
+            }
+        }
+        .col2 {
+            .contact-subject {
+                tr {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+        .col3 {
+            .contact-message {
+                span {
+                    display: block !important;
+                }
+            }
+            .contact-preference {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    svg {
+        display: none !important;
+    }
+}

@@ -3991,6 +3991,98 @@ ul.emosInfinite {
     ul.emosInfinite .ems-prd-name a {
       font-weight: bold; }
 
+.about-us {
+  margin-top: 80px;
+  padding: 0 20px; }
+  .about-us h1 {
+    font-size: 18px; }
+  .about-us .about-us-content .section-one {
+    width: 100%;
+    text-align: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .about-us .about-us-content .section-one .about-us-content-title {
+      font-size: 14px;
+      margin-bottom: 20px; }
+  .about-us .about-us-content .section-two h1 {
+    text-align: left;
+    margin-bottom: 10px; }
+  .about-us .about-us-content .section-three {
+    margin-top: 60px; }
+    .about-us .about-us-content .section-three h1 {
+      text-align: left;
+      margin-bottom: 10px; }
+    .about-us .about-us-content .section-three .section-three-img {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .about-us .about-us-content .section-three .section-three-img img {
+        margin-bottom: 10px; }
+  .about-us .about-us-content .section-four {
+    margin-top: 60px; }
+    .about-us .about-us-content .section-four h1 {
+      text-align: left;
+      margin-bottom: 20px; }
+    .about-us .about-us-content .section-four .section-four-img {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .about-us .about-us-content .section-four .section-four-img img {
+        margin-bottom: 10px; }
+
+.arcelik-contact .d-ems-flex {
+  padding: 0 20px; }
+  .arcelik-contact .d-ems-flex .col1 .ems-field span, .arcelik-contact .d-ems-flex .col1 .xmlForm #dvSehirBilgi span, .xmlForm .arcelik-contact .d-ems-flex .col1 #dvSehirBilgi span {
+    display: block !important; }
+  .arcelik-contact .d-ems-flex .col2 {
+    margin-top: 50px; }
+    .arcelik-contact .d-ems-flex .col2 .contact-subject tr {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+  .arcelik-contact .d-ems-flex .col3 {
+    margin-top: 50px; }
+    .arcelik-contact .d-ems-flex .col3 .contact-message span {
+      display: block !important; }
+    .arcelik-contact .d-ems-flex .col3 .contact-preference {
+      margin-top: 50px;
+      margin-bottom: 30px; }
+      .arcelik-contact .d-ems-flex .col3 .contact-preference span {
+        display: block !important; }
+
+.arcelik-contact svg {
+  display: none !important; }
+
 @supports ((display: -ms-grid) or (display: grid)) {
   @media screen and (min-width: 1025px) {
     .obj-mobile {
@@ -4487,7 +4579,8 @@ ul.emosInfinite {
           display: none; }
         .mini-search-sub .search-input .searchSuggestDiv {
           top: 50px; }
-    .main-slider.swiper-container .swiper-button-next, .main-slider.swiper-container .swiper-button-prev {
+    .main-slider.swiper-container .swiper-button-next,
+    .main-slider.swiper-container .swiper-button-prev {
       display: block !important; }
     .homepage-description {
       margin-top: 100px; }
@@ -4543,7 +4636,8 @@ ul.emosInfinite {
         order: 3; }
         .referanslar-right .swiper-wrapper {
           min-height: 520px; }
-        .referanslar-right .swiper-button-next, .referanslar-right .swiper-button-prev {
+        .referanslar-right .swiper-button-next,
+        .referanslar-right .swiper-button-prev {
           -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
           background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NiIgaGVpZ2h0PSI0NiIgdmlld0JveD0iMCAwIDQ2IDQ2Ij48cmVjdCB3aWR0aD0iNDYiIGhlaWdodD0iNDYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMzAuNjY3LDE3LjI1SDcuMjgzTDE4LjAxNywyNy45ODNsLTIuNjgzLDIuNjgzTDAsMTUuMzMzLDE1LjMzMywwbDIuNjgzLDIuNjgzTDcuMjgzLDEzLjQxN0gzMC42NjdWMTcuMjVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3LjY2NyA3LjY2NykiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==");
@@ -4561,7 +4655,8 @@ ul.emosInfinite {
           -o-transition: box-shadow .4s;
           transition: box-shadow .4s;
           transition: box-shadow .4s, -webkit-box-shadow .4s; }
-          .referanslar-right .swiper-button-next:hover, .referanslar-right .swiper-button-prev:hover {
+          .referanslar-right .swiper-button-next:hover,
+          .referanslar-right .swiper-button-prev:hover {
             -webkit-box-shadow: none;
             box-shadow: none; }
         .referanslar-right .swiper-button-prev {
@@ -4696,7 +4791,90 @@ ul.emosInfinite {
                   line-height: 2;
                   font-size: 13px; }
             .emosInfinite .ems-prd-inner .ems-prd-body .ems-prd-offer-btn {
-              text-align: right; } } }
+              text-align: right; }
+    .about-us {
+      margin-top: 80px;
+      padding: 0 40px; }
+      .about-us h1 {
+        font-size: 23px; }
+      .about-us .about-us-content .section-one {
+        width: 72%;
+        text-align: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px; }
+        .about-us .about-us-content .section-one .about-us-content-title {
+          font-size: 16px;
+          margin-bottom: 20px; }
+      .about-us .about-us-content .section-two h1 {
+        text-align: center;
+        margin-bottom: 40px; }
+      .about-us .about-us-content .section-three {
+        margin-top: 150px; }
+        .about-us .about-us-content .section-three h1 {
+          text-align: center;
+          margin-bottom: 40px; }
+        .about-us .about-us-content .section-three .section-three-img {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .about-us .about-us-content .section-four {
+        margin-top: 150px; }
+        .about-us .about-us-content .section-four h1 {
+          text-align: center;
+          margin-bottom: 40px; }
+        .about-us .about-us-content .section-four .section-four-img {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+    .arcelik-contact .d-ems-flex {
+      padding: 0 40px; }
+      .arcelik-contact .d-ems-flex .col1,
+      .arcelik-contact .d-ems-flex .col2,
+      .arcelik-contact .d-ems-flex .col3,
+      .arcelik-contact .d-ems-flex .col4 {
+        width: 25%; }
+      .arcelik-contact .d-ems-flex .col1 .ems-field span, .arcelik-contact .d-ems-flex .col1 .xmlForm #dvSehirBilgi span, .xmlForm .arcelik-contact .d-ems-flex .col1 #dvSehirBilgi span {
+        display: block !important; }
+      .arcelik-contact .d-ems-flex .col2 .contact-subject tr {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+      .arcelik-contact .d-ems-flex .col3 .contact-message span {
+        display: block !important; }
+      .arcelik-contact .d-ems-flex .col3 .contact-preference {
+        margin-bottom: 30px; }
+    .arcelik-contact svg {
+      display: none !important; } } }
 
 .site-main {
   background: none;

@@ -1,0 +1,54 @@
+.about-us {
+    margin-top: 80px;
+    padding: 0 40px;
+    h1 {
+        font-size: 23px;
+    }
+    .about-us-content {
+        .section-one {
+            width: 72%;
+            text-align: center;
+            justify-content: start;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            .about-us-content-title {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+        .section-two {
+            h1 {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+        }
+        .section-three {
+            margin-top: 150px;
+            h1 {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .section-three-img {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+        .section-four {
+            margin-top: 150px;
+            h1 {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .section-four-img {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+    }
+}
