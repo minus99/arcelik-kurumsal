@@ -4230,9 +4230,6 @@ ul.emosInfinite {
       .arcelik-contact .d-ems-flex .col3 .contact-preference span {
         display: block !important; }
 
-.arcelik-contact svg {
-  display: none !important; }
-
 .referanslar .ref-info {
   margin-top: 160px; }
   .referanslar .ref-info-wrapper {
@@ -5856,29 +5853,87 @@ ul.emosInfinite {
             font-size: 25px;
             color: #717171;
             font-weight: 300; }
-    .arcelik-contact .d-ems-flex {
-      padding: 0 40px; }
-      .arcelik-contact .d-ems-flex .col1,
-      .arcelik-contact .d-ems-flex .col2,
-      .arcelik-contact .d-ems-flex .col3,
-      .arcelik-contact .d-ems-flex .col4 {
-        width: 25%; }
-      .arcelik-contact .d-ems-flex .col1 .ems-field span, .arcelik-contact .d-ems-flex .col1 .xmlForm #dvSehirBilgi span, .xmlForm .arcelik-contact .d-ems-flex .col1 #dvSehirBilgi span {
-        display: block !important; }
-      .arcelik-contact .d-ems-flex .col2 .contact-subject tr {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column; }
-      .arcelik-contact .d-ems-flex .col3 .contact-message span {
-        display: block !important; }
-      .arcelik-contact .d-ems-flex .col3 .contact-preference {
-        margin-bottom: 30px; }
-    .arcelik-contact svg {
-      display: none !important; } } }
+    .ems-page-hierarchy {
+      margin-top: 50px; }
+      .ems-page-hierarchy .ga1 {
+        padding-left: 40px;
+        padding-right: 40px; }
+        .ems-page-hierarchy .ga1 .sev3.act.icr {
+          font-size: 17px;
+          font-weight: bold; }
+      .ems-page-hierarchy .arcelik-contact .d-ems-flex {
+        padding: 0 40px; }
+        .ems-page-hierarchy .arcelik-contact .d-ems-flex .col1,
+        .ems-page-hierarchy .arcelik-contact .d-ems-flex .col2,
+        .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3,
+        .ems-page-hierarchy .arcelik-contact .d-ems-flex .col4 {
+          width: 25%; }
+        .ems-page-hierarchy .arcelik-contact .d-ems-flex .col1 .ems-field span, .ems-page-hierarchy .arcelik-contact .d-ems-flex .col1 .xmlForm #dvSehirBilgi span, .xmlForm .ems-page-hierarchy .arcelik-contact .d-ems-flex .col1 #dvSehirBilgi span {
+          display: block !important;
+          padding-bottom: 5px; }
+        .ems-page-hierarchy .arcelik-contact .d-ems-flex .col2 {
+          margin: 0 !important;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .ems-page-hierarchy .arcelik-contact .d-ems-flex .col2 .contact-subject {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column; }
+            .ems-page-hierarchy .arcelik-contact .d-ems-flex .col2 .contact-subject > span {
+              display: inline-block !important; }
+            .ems-page-hierarchy .arcelik-contact .d-ems-flex .col2 .contact-subject tr td {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+          .ems-page-hierarchy .arcelik-contact .d-ems-flex .col2 .contact-group1 {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .ems-page-hierarchy .arcelik-contact .d-ems-flex .col2 .contact-group1 tr td {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+        .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 {
+          margin: 0; }
+          .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-message span {
+            display: block !important; }
+          .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-preference {
+            margin-bottom: 30px; }
+            .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-preference table {
+              margin-bottom: 20px; }
+              .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-preference table tr td {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex; }
+        .ems-page-hierarchy .arcelik-contact .d-ems-flex .col4 {
+          text-align: center; }
+      .ems-page-hierarchy .arcelik-contact .icon-radio {
+        border: 1px solid #000;
+        border-radius: 100%;
+        width: 17px !important;
+        height: 17px !important; }
+      .ems-page-hierarchy .arcelik-contact .icon-radio-active {
+        width: 20px !important;
+        height: 20px !important; } } }
 
 .site-main {
   background: none;
