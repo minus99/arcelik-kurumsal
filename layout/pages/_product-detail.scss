@@ -1,6 +1,10 @@
 .ems-page-product-detail{
     &-grid{
         > div{
+            margin-bottom:100px;
+            &.ga1{
+                margin-bottom: 20px;
+            }
         }
     }
 }
@@ -13,6 +17,28 @@
     flex-wrap: wrap;
     &-left{
         width:100%;
+        .swiper-container-thumbs{
+            padding: 10px;
+            .swiper-wrapper{
+                padding: 10px 0px;
+                .swiper-slide{
+                    cursor: pointer;
+                    text-align: center;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    border:2px solid transparent;
+                    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                    transition: box-shadow .4s;
+                    &:hover{
+                        border:2px solid $color4;
+                        box-shadow: none;
+                    }
+                    img{
+                        width:102px
+                    }
+                }
+            }
+        }
         .swiper-slide{
             a{
                 width:100%;
@@ -21,6 +47,9 @@
                     width: 100%;
                 }
             }
+        }
+        .swiper-pagination{
+            display: none !important;
         }
         .zoom-gallery{
             display: none;
@@ -101,6 +130,74 @@
                         font-size:20px;
                         margin-right: 5px;
                     }  
+                }
+            }
+        }
+    }
+}
+
+
+.prd-patch-item{
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap:wrap;
+        li{
+            width:49%;
+            max-width: 155px;
+            margin-bottom: 30px;
+            > *{
+                width:100%;
+            }
+            img{
+                margin-bottom:15px;
+            }
+            span{
+                display: block;
+                &:nth-child(2){
+                    font-size:13px;
+                    margin-bottom: 15px;
+                }
+                &:nth-child(3){
+
+                }
+            }
+        }
+    }
+}
+
+.prd-detail-ozellik-set{
+    margin-top:100px;
+    .urunOzellik{
+        > table{
+           > tbody{
+                > tr{
+                    .gridRowUrunOzellik , .gridAlternateUrunOzellik{
+                        div.tableTitleUrunOzellik{
+                            font-weight: bold;
+                            font-size:16px;
+                            text-align: left;
+                            margin-bottom:20px;
+                        }
+                        table{
+                            margin-bottom:80px;
+                            tbody{
+                                .gridRowUrunOzellikDetay , .gridAlternateUrunOzellikDetay{
+                                    border-bottom:1px solid $color3;
+                                    padding:10px 0px;
+                                    display: flex;
+                                    td{
+                                        width:50% !important;
+                                        &:nth-child(2){
+                                            font-weight: bold;
+                                            text-align: right;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

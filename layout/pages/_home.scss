@@ -3,6 +3,12 @@
 .main-slider.swiper-container{
     overflow: hidden;
     .swiper-slide{
+        a{
+            width:100%;
+            img{
+                width: 100%;
+            }
+        }
     }
     .swiper-button-next , .swiper-button-prev{
 

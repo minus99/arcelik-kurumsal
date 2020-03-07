@@ -55,3 +55,63 @@
         }
     }
 }
+
+.prd-patch-item{
+    margin-top:150px;
+    ul{
+        li{
+            width:23%;
+            max-width: 285px;
+            img{
+                margin-bottom: 25px;
+            }
+            span{
+                &:nth-child(2){
+                    font-size:22px;
+                    margin-bottom: 25px;
+                }
+                &:nth-child(3){
+                    font-size:25px;
+                }
+            }
+        }
+    }
+}
+
+
+
+.prd-detail-ozellik-set{
+    margin-top:100px;
+    .urunOzellik{
+        > table{
+           > tbody{
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-between;
+                > tr{
+                    width:45%;
+                     > td{
+                         width:100%;
+                         display: block;
+                     }
+                    .gridRowUrunOzellik , .gridAlternateUrunOzellik{
+                        div.tableTitleUrunOzellik{
+                            font-size: 25px;         
+                        }
+                        table{
+                            tbody{
+                                .gridRowUrunOzellikDetay , .gridAlternateUrunOzellikDetay{
+                                    
+                                    td{
+                                        &:nth-child(2){
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

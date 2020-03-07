@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* autoprefixer grid: off */
 @font-face {
   font-family: "icomoon";
@@ -3620,6 +3621,10 @@ ul.menuKategori b {
 
 .main-slider.swiper-container {
   overflow: hidden; }
+  .main-slider.swiper-container .swiper-slide a {
+    width: 100%; }
+    .main-slider.swiper-container .swiper-slide a img {
+      width: 100%; }
   .main-slider.swiper-container .swiper-pagination {
     display: block;
     position: absolute; }
@@ -3881,6 +3886,9 @@ ul.menuKategori b {
 .main-cat-body .ems-prd-list-right .ems-prd-list-sub-cats {
   display: none !important; }
 
+.ems-prd-list-cover {
+  overflow: hidden; }
+
 .ems-prd-list-top-bar {
   margin-bottom: 30px;
   display: -webkit-box;
@@ -4025,16 +4033,58 @@ ul.emosInfinite {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   ul.emosInfinite .ems-prd {
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
     width: 100%; }
+    ul.emosInfinite .ems-prd:last-child {
+      border-top: 1px solid #ddd; }
+    ul.emosInfinite .ems-prd-inner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 20px; }
+    ul.emosInfinite .ems-prd-body {
+      width: calc(100% - 130px);
+      margin-left: 20px; }
+    ul.emosInfinite .ems-prd-image {
+      width: 110px; }
     ul.emosInfinite .ems-prd-category span.emos_invisible {
       display: block !important;
       overflow: hidden;
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       white-space: nowrap; }
-    ul.emosInfinite .ems-prd-name a {
-      font-weight: bold; }
+    ul.emosInfinite .ems-prd-name {
+      margin-top: 20px; }
+      ul.emosInfinite .ems-prd-name a {
+        font-weight: bold; }
+    ul.emosInfinite .ems-prd-offer-btn {
+      text-align: right;
+      margin-top: 10px; }
+
+/* Mutfak Tipi Ürün Liste 2 Li gösterim  */
+.prd-list-alternate .ems-prd-list {
+  margin-top: 0px; }
+
+.prd-list-alternate .ems-prd-list-left, .prd-list-alternate .ems-prd-list-sub-cats, .prd-list-alternate .ems-prd-list-btn-area {
+  display: none; }
+
+.prd-list-alternate .ems-prd-list-right {
+  width: 100%; }
+  .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-description span ul li {
+    font-size: 19px !important; }
+  .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-image a {
+    display: block;
+    width: 100%; }
+    .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-image a img {
+      width: 100%; }
+
+.ems-page-product-detail-grid > div {
+  margin-bottom: 100px; }
+  .ems-page-product-detail-grid > div.ga1 {
+    margin-bottom: 20px; }
 
 .prd-detail-page {
   display: -webkit-box;
@@ -4050,11 +4100,36 @@ ul.emosInfinite {
   flex-wrap: wrap; }
   .prd-detail-page-left {
     width: 100%; }
+    .prd-detail-page-left .swiper-container-thumbs {
+      padding: 10px; }
+      .prd-detail-page-left .swiper-container-thumbs .swiper-wrapper {
+        padding: 10px 0px; }
+        .prd-detail-page-left .swiper-container-thumbs .swiper-wrapper .swiper-slide {
+          cursor: pointer;
+          text-align: center;
+          border-radius: 5px;
+          overflow: hidden;
+          border: 2px solid transparent;
+          -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          -webkit-transition: -webkit-box-shadow .4s;
+          transition: -webkit-box-shadow .4s;
+          -o-transition: box-shadow .4s;
+          transition: box-shadow .4s;
+          transition: box-shadow .4s, -webkit-box-shadow .4s; }
+          .prd-detail-page-left .swiper-container-thumbs .swiper-wrapper .swiper-slide:hover {
+            border: 2px solid #b51f2a;
+            -webkit-box-shadow: none;
+            box-shadow: none; }
+          .prd-detail-page-left .swiper-container-thumbs .swiper-wrapper .swiper-slide img {
+            width: 102px; }
     .prd-detail-page-left .swiper-slide a {
       width: 100%;
       display: block; }
       .prd-detail-page-left .swiper-slide a img {
         width: 100%; }
+    .prd-detail-page-left .swiper-pagination {
+      display: none !important; }
     .prd-detail-page-left .zoom-gallery {
       display: none; }
   .prd-detail-page-right {
@@ -4140,6 +4215,53 @@ ul.emosInfinite {
           .prd-detail-page-right .prd-detail-buttons .ems-prd-offer-btn a i {
             font-size: 20px;
             margin-right: 5px; }
+
+.prd-patch-item ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .prd-patch-item ul li {
+    width: 49%;
+    max-width: 155px;
+    margin-bottom: 30px; }
+    .prd-patch-item ul li > * {
+      width: 100%; }
+    .prd-patch-item ul li img {
+      margin-bottom: 15px; }
+    .prd-patch-item ul li span {
+      display: block; }
+      .prd-patch-item ul li span:nth-child(2) {
+        font-size: 13px;
+        margin-bottom: 15px; }
+
+.prd-detail-ozellik-set {
+  margin-top: 100px; }
+  .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridRowUrunOzellik div.tableTitleUrunOzellik, .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridAlternateUrunOzellik div.tableTitleUrunOzellik {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 20px; }
+  .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridRowUrunOzellik table, .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridAlternateUrunOzellik table {
+    margin-bottom: 80px; }
+    .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridRowUrunOzellik table tbody .gridRowUrunOzellikDetay, .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridRowUrunOzellik table tbody .gridAlternateUrunOzellikDetay, .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridAlternateUrunOzellik table tbody .gridRowUrunOzellikDetay, .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridAlternateUrunOzellik table tbody .gridAlternateUrunOzellikDetay {
+      border-bottom: 1px solid #eee;
+      padding: 10px 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridRowUrunOzellik table tbody .gridRowUrunOzellikDetay td, .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridRowUrunOzellik table tbody .gridAlternateUrunOzellikDetay td, .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridAlternateUrunOzellik table tbody .gridRowUrunOzellikDetay td, .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridAlternateUrunOzellik table tbody .gridAlternateUrunOzellikDetay td {
+        width: 50% !important; }
+        .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridRowUrunOzellik table tbody .gridRowUrunOzellikDetay td:nth-child(2), .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridRowUrunOzellik table tbody .gridAlternateUrunOzellikDetay td:nth-child(2), .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridAlternateUrunOzellik table tbody .gridRowUrunOzellikDetay td:nth-child(2), .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridAlternateUrunOzellik table tbody .gridAlternateUrunOzellikDetay td:nth-child(2) {
+          font-weight: bold;
+          text-align: right; }
 
 .referanslar .ref-info {
   margin-top: 160px; }
@@ -5450,11 +5572,15 @@ ul.emosInfinite {
         border-radius: 6px;
         margin: 17.5px; }
         .emosInfinite .ems-prd-inner {
-          padding: 20px 10px; }
+          padding: 20px 10px;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
           .emosInfinite .ems-prd-inner .ems-prd-image {
+            width: 100%;
             padding-bottom: 10px;
             border-bottom: 1px solid #eee; }
           .emosInfinite .ems-prd-inner .ems-prd-body {
+            width: 100%;
             margin-top: 20px; }
             .emosInfinite .ems-prd-inner .ems-prd-body .ems-prd-name {
               margin-bottom: 10px; }
@@ -5468,6 +5594,22 @@ ul.emosInfinite {
                   font-size: 13px; }
             .emosInfinite .ems-prd-inner .ems-prd-body .ems-prd-offer-btn {
               text-align: right; }
+    /* Mutfak Tipi Ürün Liste 2 Li gösterim  */
+    .prd-list-alternate .ems-prd-list-right ul.emosInfinite {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd {
+        margin-bottom: 100px;
+        width: calc((100% / 2) - 60px) !important; }
+        .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-name {
+          font-size: 30px; }
+        .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-description span ul li {
+          font-size: 19px !important; }
+        .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-image a img {
+          height: 375px;
+          -o-object-fit: contain;
+          object-fit: contain; }
     .prd-detail-page-left {
       width: 49%; }
     .prd-detail-page-right {
@@ -5508,6 +5650,36 @@ ul.emosInfinite {
         .prd-detail-page-right .prd-detail-buttons .scroll-trigger > div {
           margin-top: 25px;
           margin-bottom: 0px; }
+    .prd-patch-item {
+      margin-top: 150px; }
+      .prd-patch-item ul li {
+        width: 23%;
+        max-width: 285px; }
+        .prd-patch-item ul li img {
+          margin-bottom: 25px; }
+        .prd-patch-item ul li span:nth-child(2) {
+          font-size: 22px;
+          margin-bottom: 25px; }
+        .prd-patch-item ul li span:nth-child(3) {
+          font-size: 25px; }
+    .prd-detail-ozellik-set {
+      margin-top: 100px; }
+      .prd-detail-ozellik-set .urunOzellik > table > tbody {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .prd-detail-ozellik-set .urunOzellik > table > tbody > tr {
+          width: 45%; }
+          .prd-detail-ozellik-set .urunOzellik > table > tbody > tr > td {
+            width: 100%;
+            display: block; }
+          .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridRowUrunOzellik div.tableTitleUrunOzellik, .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridAlternateUrunOzellik div.tableTitleUrunOzellik {
+            font-size: 25px; }
     .cozum-header {
       margin-bottom: 100px; }
     .cozum-title {

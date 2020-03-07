@@ -29,7 +29,7 @@
 .ems-prd-list{
     display: flex !important;
     flex-wrap: wrap;
-    position: relative;
+    position: relative;    
     .ems-prd-list-top-bar{
         .ems-prd-list-navigasyon{
             width:70%;
@@ -156,11 +156,14 @@
         margin:17.5px;
         &-inner{
             padding:20px 10px;
+            flex-wrap: wrap;
             .ems-prd-image{
+                width:100%;
                 padding-bottom:10px;
                 border-bottom:1px solid $color3;
             }
             .ems-prd-body{
+                width:100%;
                 margin-top:20px;
                 .ems-prd-name{
                     margin-bottom:10px;
@@ -180,6 +183,41 @@
                 }
                 .ems-prd-offer-btn{
                     text-align: right;
+                }
+            }
+        }
+    }
+}
+
+
+/* Mutfak Tipi Ürün Liste 2 Li gösterim  */
+
+.prd-list-alternate{
+    .ems-prd-list-right{
+        ul.emosInfinite{
+            justify-content: space-between;
+            .ems-prd{
+                margin-bottom:100px;
+                width:calc((100% / 2) - 60px) !important;
+                &-name{
+                    font-size:30px;
+                }
+                &-description{
+                    span{
+                        ul{
+                            li{
+                                font-size:19px !important;       
+                            }
+                        }
+                    }
+                }
+                &-image{
+                    a{
+                        img{
+                            height:375px;
+                            object-fit: contain;
+                        }
+                    }
                 }
             }
         }
