@@ -1,0 +1,117 @@
+.site-footer {
+    overflow: hidden;
+    background: #fdfdfd;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    margin-top: 100px;
+    display: flex;
+    padding: 45px 20px;
+    &:before {
+        content: unset;
+    }
+    .footer-left {
+        width: calc(100% - 300px);
+        .popup-offer {
+            overflow: hidden;
+            .offer-body {
+                .offer-section-2 {
+                    iframe {
+                        height: -webkit-fill-available;
+                        width: 100%;
+                        padding-bottom: 80px;
+                        .xmlFormContent {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-menu {
+            display: flex;
+            ul {
+                width: 25%;
+                margin: 0;
+                span {
+                    font-weight: bold;
+                    margin-top: 0 !important;
+                    margin-bottom: 25px;
+                    display: block !important;
+                }
+                li {
+                    margin-bottom: 25px;
+                    color: $color7;
+                    display: block;
+                }
+                &:last-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .footer-right {
+        width: 300px;
+        border-left: 1px solid $color3;
+        padding-left: 20px;
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        .footer-social-menu {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            .f-contact {
+                justify-content: flex-end;
+                i {
+                    font-size: 14px;
+                }
+            }
+            .f-phone {
+                font-size: 40px;
+                font-weight: bold;
+                padding: 10px 0;
+            }
+            .f-social {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                li {
+                    padding-right: 5px;
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+            .koc-logo {
+                img {
+                    width: 80px;
+                }
+                .copyright {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.popup-offer-animate {
+    overflow: hidden;
+}
+
+.ems-page-search {
+    .ga2 {
+        .pageArama {
+            padding: 50px 0 0px 50px;
+            .pageDescDefault {
+                width: 50%;
+            }
+        }
+        .tableTitleArama {
+            padding: 50px 0 0px 50px;
+        }
+        .tableDefault {
+            display: none !important;
+        }
+        .tblBtnAraIptal {
+            display: none;
+        }
+    }
+}

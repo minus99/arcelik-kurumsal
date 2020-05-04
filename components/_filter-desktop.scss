@@ -4,23 +4,28 @@
     background-color: transparent;
     color: inherit;
 }
+
 .kutuHeaderOzellikFiltre {
     background-color: inherit;
     padding: 15px 10px;
     border-bottom: 1px solid $color10;
 }
+
 .kutuBodyOzellikFiltre {
     overflow: visible;
 }
+
 #dvUrunKiyaslamaOzellik {
     margin: 0;
+    margin-top: 10px;
     border-color: $color10;
 }
+
 .urunKiyaslamaOzellik_ozellikAd {
     position: static;
     background-color: inherit;
-    padding: 22px 0;
 }
+
 .kutuFooterOzellikFiltre {
     display: none;
 }
@@ -28,4 +33,5 @@
 //seçili filtreler
 .pnlUrunKiyasSecim {
     display: block;
+    margin: 20px 0 0 30px;
 }

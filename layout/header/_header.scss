@@ -1,62 +1,73 @@
-.site-header{
+.site-header {
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 100;
     background-color: $color2;
-    width:100%;
-    .header-center{
+    width: 100%;
+    .header-center {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        height:50px;
+        height: 50px;
         box-shadow: 0 3px 15px 0 rgba(103, 103, 103, 0.11);
         flex-wrap: wrap;
-        .header-info{
+        .header-info {
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            width:33%;
-            .open-menu{
+            width: 33%;
+            .open-menu {
                 display: flex;
                 flex-wrap: wrap;
                 align-content: center;
-                width:21px;
-                height:40px;
-                span{
-                    border:2px solid $color1;
-                    width:100%;
+                width: 21px;
+                height: 40px;
+                span {
+                    border: 2px solid $color1;
+                    width: 100%;
                     border-radius: 1px;
-                    margin:2.5px 0px;
+                    margin: 2.5px 0px;
                 }
             }
         }
-        .header-bid{
+        .header-bid {
             z-index: 9;
-            height:100%;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            width:33%;
-            .bid-btn{
-                i{
-                    font-size:25px;
-                    color:$color4;
-                    margin-top:5px;
+            width: 33%;
+            .bid-btn {
+                i {
+                    font-size: 25px;
+                    color: $color4;
+                    margin-top: 5px;
+                }
+                .badge {
+                    background: black;
+                    color: white;
+                    border-radius: 100%;
+                    width: 13px;
+                    height: 13px;
+                    position: absolute;
+                    left: 25px;
+                    text-align: center;
+                    font-size: 10px;
                 }
             }
         }
-        .header-menu{
-            width:0px;
+        .header-menu {
+            width: 0px;
         }
-        .header-logo{
+        .header-logo {
             text-align: center;
-            width:33%;
-            img{
-                width:110px;
+            width: 33%;
+            img {
+                width: 110px;
                 position: relative;
                 z-index: 12;
-                margin-top:10px;
+                margin-top: 10px;
             }
         }
     }

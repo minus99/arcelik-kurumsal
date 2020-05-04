@@ -1,44 +1,99 @@
-.site-footer{
-    overflow: hidden;
-    background: #fdfdfd;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    margin-top:100px;
-    display: flex;
-    padding:45px 20px;
-    .footer-left{
-        width:calc(100% - 300px);
-        .footer-menu{
-            display: flex;
-            ul{
-                margin-right:100px;
-                span{
-                    font-weight: bold;
-                    margin-bottom:25px;
-                    display: block;
+.site-footer {
+    &:before {
+        content: "";
+        margin: 10px 0 25px 0;
+        border: 1px solid #ddd;
+        width: 100%;
+        opacity: 0.7;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+        display: block;
+    }
+    .footer-left {
+        .footer-menu {
+            ul {
+                margin: 10px 0;
+                &:nth-child(3) {
+                    span {
+                        display: none;
+                    }
+                    li {
+                        display: block;
+                        margin: 10px 0;
+                    }
                 }
-                li{
-                    margin-bottom:25px;
-                    color:$color7;
+                &:nth-child(4) {
+                    span {
+                        margin-top: 15px;
+                    }
+                    li {
+                        display: block;
+                        margin: 10px 0;
+                    }
+                }
+                li {
+                    display: none;
+                }
+                &:last-child {
+                    margin-top: 25px;
                 }
             }
         }
     }
-    .footer-right{
-        width:300px;
-        border-left:1px solid $color3;
-        padding-left:20px;
-        display: flex;
-        justify-content: flex-end;
-        height:100%;
-        .footer-social-menu{
-            height:380px;
+    .footer-right {
+        .footer-social-menu {
             display: flex;
-            flex-wrap: wrap;
-            align-content: space-between;
-            > *{
-                display: block;
-                width:100%;
+            flex-direction: column;
+            margin-top: 40px;
+            .f-contact {
+                display: flex;
+                align-items: flex-end;
+                i {
+                    font-size: 20px;
+                    padding-right: 3px;
+                }
             }
+            .f-phone {
+                font-size: 40px;
+                font-weight: bold;
+                margin: 10px 0
+            }
+            .f-social {
+                display: flex;
+                flex-direction: row;
+                li {
+                    padding-right: 15px;
+                }
+            }
+            .koc-logo {
+                img {
+                    width: 100px;
+                }
+            }
+            .copyright {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.ems-page-search {
+    .ga2 {
+        .pageArama {
+            >div {
+                &:first-child {
+                    padding-bottom: 15px;
+                }
+            }
+            padding: 50px 0 0 20px
+        }
+        .tableTitleArama {
+            padding: 30px 0 0px 20px;
+        }
+        .tableDefault {
+            display: none !important;
+        }
+        .tblBtnAraIptal {
+            display: none;
         }
     }
 }

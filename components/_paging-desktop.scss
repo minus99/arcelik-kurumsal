@@ -2,6 +2,7 @@
     margin-top: 50px;
     width: auto;
 }
+
 .urunPaging_pageNavigation {
     border: none;
     [id$="lblPaging"] {
@@ -19,21 +20,36 @@
         }
     }
     .paging {
-        border: 1px solid $color5;
-        min-width: 48px;
-        margin: 0 5px;
+        margin: 0 30px;
         font-size: 16px;
         &[id$="lnkPrev"] {
+            border-left: unset;
+            width: 40px;
+            border: 1px solid;
+            border-radius: 100%;
+            height: 40px;
+            line-height: 37px;
             margin-left: auto;
-            + [id$="lblPaging"] {
+            +[id$="lblPaging"] {
+                margin-left: 0;
+            }
+        }
+        &[id$="lnkNext"] {
+            border-left: unset;
+            width: 40px;
+            border: 1px solid;
+            border-radius: 100%;
+            height: 40px;
+            line-height: 37px;
+            +[id$="lblPaging"] {
                 margin-left: 0;
             }
         }
     }
     span.paging {
-        background: $color1;
-        color: $color2;
+        color: #b51f2a;
         border-color: transparent;
+        border-bottom: 1px solid;
     }
     .tumunuGoster {
         display: block !important;

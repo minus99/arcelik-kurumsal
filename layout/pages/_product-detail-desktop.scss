@@ -1,110 +1,151 @@
-.prd-detail-page{
-    &-left{
+.prd-detail-page {
+    &-left {
         width: 49%;
+        .ems-prd-name {
+            display: none;
+        }
     }
-    &-right{
+    &-right {
         width: 49%;
         display: flex;
         flex-wrap: wrap;
-        > div{
-            width:100%;
+        >div {
+            width: 100%;
         }
-        .ems-prd-name{
-            order:1;
-            font-size:35px;
-            font-weight: bold;
-        }
-        .ems-prd-types{
-            order:3;
-            .ems-prd-colors , .ems-prd-texture{
-                > .ems-prd-types-title{
-                    font-size:22px;
+        .ems-swiper-active {
+            .swiper-wrapper {
+                align-items: flex-end;
+                padding: 25px 0px;
+                .swiper-slide {
+                    padding-left: 20px;
+                    img {
+                        transition: margin .4s;
+                        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+                        border-radius: 8px;
+                        width: 60%;
+                    }
                 }
-                li{
-
+                .swiper-slide-active {
+                    img {
+                        margin-bottom: 90px;
+                    }
+                }
+                min-height: 250px;
+            }
+            .swiper-button-next,
+            .swiper-button-prev {
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NiIgaGVpZ2h0PSI0NiIgdmlld0JveD0iMCAwIDQ2IDQ2Ij48cmVjdCB3aWR0aD0iNDYiIGhlaWdodD0iNDYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMzAuNjY3LDE3LjI1SDcuMjgzTDE4LjAxNywyNy45ODNsLTIuNjgzLDIuNjgzTDAsMTUuMzMzLDE1LjMzMywwbDIuNjgzLDIuNjgzTDcuMjgzLDEzLjQxN0gzMC42NjdWMTcuMjVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3LjY2NyA3LjY2NykiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==");
+                display: block;
+                border: 1px solid $color1;
+                border-radius: 100%;
+                position: absolute;
+                bottom: -100px;
+                top: inherit;
+                background-color: $color2;
+                width: 103px;
+                height: 103px;
+                transition: box-shadow .4s;
+                &:hover {
+                    box-shadow: none;
                 }
             }
+            .swiper-button-next {
+                left: 55%;
+            }
+            .swiper-button-prev {
+                right: 20%;
+            }
         }
-        .ems-prd-description{
-            order:2;
-            font-size:22px;
-            line-height:30px;
-            margin-top:30px;
+        .ems-prd-name {
+            order: 1;
+            font-size: 35px;
+            font-weight: bold;
+            display: block;
         }
-        .prd-detail-buttons{
-            order:4;
+        .ems-prd-types {
+            order: 3;
+            .ems-prd-colors,
+            .ems-prd-texture {
+                >.ems-prd-types-title {
+                    font-size: 22px;
+                }
+                li {}
+            }
+        }
+        .ems-prd-description {
+            order: 2;
+            font-size: 22px;
+            line-height: 30px;
+            margin-top: 30px;
+        }
+        .prd-detail-buttons {
+            order: 4;
             align-items: flex-end;
-            .scroll-trigger{
-                > div{
-                    margin-top:25px;
+            .scroll-trigger {
+                >div {
+                    margin-top: 25px;
                     margin-bottom: 0px;
-                    a{
-                        i{                            
-                        }
-                        span{
-                            
-                        }
+                    a {
+                        i {}
+                        span {}
                     }
                 }
             }
-            .ems-prd-offer-btn{
-                a{
-                 
-                }
+            .ems-prd-offer-btn {
+                a {}
             }
         }
     }
 }
 
-.prd-patch-item{
-    margin-top:150px;
-    ul{
-        li{
-            width:23%;
+.prd-patch-item {
+    margin-top: 150px;
+    ul {
+        li {
+            width: 23%;
             max-width: 285px;
-            img{
+            img {
                 margin-bottom: 25px;
             }
-            span{
-                &:nth-child(2){
-                    font-size:22px;
+            span {
+                &:nth-child(2) {
+                    font-size: 22px;
                     margin-bottom: 25px;
                 }
-                &:nth-child(3){
-                    font-size:25px;
+                &:nth-child(3) {
+                    font-size: 25px;
                 }
             }
         }
     }
 }
 
-
-
-.prd-detail-ozellik-set{
-    margin-top:100px;
-    .urunOzellik{
-        > table{
-           > tbody{
-               display: flex;
-               flex-wrap: wrap;
-               justify-content: space-between;
-                > tr{
-                    width:45%;
-                     > td{
-                         width:100%;
-                         display: block;
-                     }
-                    .gridRowUrunOzellik , .gridAlternateUrunOzellik{
-                        div.tableTitleUrunOzellik{
-                            font-size: 25px;         
+.prd-detail-ozellik-set {
+    margin-top: 100px;
+    .urunOzellik {
+        >table {
+            >tbody {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                >tr {
+                    width: 45%;
+                    >td {
+                        width: 100%;
+                        display: block;
+                    }
+                    .gridRowUrunOzellik,
+                    .gridAlternateUrunOzellik {
+                        div.tableTitleUrunOzellik {
+                            font-size: 25px;
                         }
-                        table{
-                            tbody{
-                                .gridRowUrunOzellikDetay , .gridAlternateUrunOzellikDetay{
-                                    
-                                    td{
-                                        &:nth-child(2){
-                                        }
+                        table {
+                            tbody {
+                                .gridRowUrunOzellikDetay,
+                                .gridAlternateUrunOzellikDetay {
+                                    td {
+                                        &:nth-child(2) {}
                                     }
                                 }
                             }

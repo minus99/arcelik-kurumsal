@@ -8,28 +8,31 @@
     height: 100%;
     background: $color3;
     color: $color1;
-
     .btn-close {
         display: inline-flex;
     }
 }
+
 .kutuHeaderOzellikFiltre {
     background: $color2;
     padding: 21px 20px;
     font-size: 22px;
     font-weight: 700;
 }
+
 .kutuBodyOzellikFiltre {
     font-family: $font2;
     font-size: 15px;
     height: calc(100% - 162px);
     overflow: auto;
 }
-#dvUrunKiyaslamaOzellik  {
+
+#dvUrunKiyaslamaOzellik {
     border-bottom: 1px solid $color5;
     margin: 0 20px;
     padding: 0 10px;
 }
+
 .urunKiyaslamaOzellik_ozellikAd {
     @extend .base64;
     @extend .base64-minus;
@@ -38,7 +41,6 @@
     z-index: 1;
     background-color: $color3;
     font-weight: 700;
-    padding: 18px 0;
     background-position: right center;
     background-size: 32px;
     transition: background-image .25s ease;
@@ -48,24 +50,28 @@
         @extend .base64-plus;
     }
 }
+
 .urunKiyaslamaOzellik_temizle {
     display: none;
 }
+
 .urunKiyaslamaOzellik_ozellikIcerik {
     padding: 0 0 15px;
 }
+
 .urunKiyaslamaOzellik {
     @extend .base64;
     @extend .base64-check;
     position: relative;
     display: block;
-    padding: 11px 10px 10px 24px;
+    padding: 5px 0 5px 24px;
     font-size: 13px;
     background-position: left center;
     &.link_selected {
         @extend .base64-check-active;
     }
 }
+
 .kutuFooterOzellikFiltre {
     position: fixed;
     left: 0;
@@ -76,7 +82,7 @@
     background: inherit;
     display: flex;
     justify-content: space-between;
-    > div {
+    >div {
         flex: 1;
         padding: 0 5px;
     }
@@ -85,6 +91,7 @@
         line-height: 48px;
     }
 }
+
 .urunKiyaslamaOzellik_tumunuTemizle {
     display: block !important;
     a {
@@ -96,49 +103,51 @@
     }
 }
 
-
 //seçili filtreler
 .pnlUrunKiyasSecim {
     display: none;
-    margin-top: 20px;
 }
+
 .urunKiyaslamaOzellik_secimbaslik,
 .urunKiyaslamaOzellik_UrunSayi {
     display: none;
 }
+
 .urunKiyaslamaOzellik_secimler {
     $marginl: 10px;
     display: flex;
     flex-wrap: wrap;
     margin-left: -$marginl;
     font-family: $font2;
-    > div {
+    >div {
         background: $color2;
         color: $color1;
-        border:1px solid $color1;
+        border: 1px solid $color1;
         border-radius: 5px;
         padding: 9px 20px 10px 10px;
         margin-left: $marginl;
         margin-top: 10px;
-        i{
-            font-size:15px;
-            margin-right:5px;
+        i {
+            font-size: 15px;
+            margin-right: 5px;
             transform: rotate(45deg);
         }
     }
 }
+
 .ozellikFiltreBaslik {
     display: block;
     font-size: 15px;
     font-weight: 700;
 }
+
 .ozellikFiltreSecim {
     $ml: 10px;
     display: flex;
     margin-top: 4px;
     margin-left: -$ml;
     font-size: 13px;
-    > a {
+    >a {
         margin-left: $ml;
     }
 }
@@ -147,7 +156,7 @@
     //renk
     &2 {
         .urunKiyaslamaOzellik_ozellikIcerik {
-            table > tbody {
+            table>tbody {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, 25px);
                 grid-gap: 15px;
@@ -186,18 +195,17 @@
             display: none;
         }
     }
-
     //beden
     &3 {
         .urunKiyaslamaOzellik_ozellikIcerik {
-            table > tbody {
+            table>tbody {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, calc(100%/3));
                 padding-top: 1px;
-                > tr {
+                >tr {
                     margin-left: -1px;
                     margin-top: -1px;
-                    > td {
+                    >td {
                         display: block;
                     }
                 }
@@ -217,9 +225,8 @@
     }
 }
 
-.ems-filter-ready {
-    
-}
+.ems-filter-ready {}
+
 .ems-filter-animate {
     position: fixed;
     #pnlSecimiDarat {

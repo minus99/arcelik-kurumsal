@@ -1,6 +1,8 @@
 $form-element-height: 44px;
 input:not([type=checkbox]):not([type=radio]),
-select, .sStylerWrp_select, .dropdown-header,
+select,
+.sStylerWrp_select,
+.dropdown-header,
 textarea {
     font-family: $font2;
     font-size: 15px;
@@ -41,9 +43,11 @@ textarea {
     margin-right: 5px;
     text-align: center;
 }
+
 [id$="UYE_CEPTELEFON"] {
     width: calc(100% - 70px) !important;
 }
+
 .geneltelefon,
 .site_textarea {
     width: 100% !important;
@@ -52,17 +56,16 @@ textarea {
 .sStylerMainWrp {
     position: relative;
 }
+
 .sStylerWrp_checkbox,
 .sStylerWrp_radio {
     display: inline-block;
     vertical-align: -0.1em;
     margin-right: 7px;
     user-select: none;
-    > span {
+    >span {
         display: block;
         svg {
-            display: block;
-            font-size: 13px;
             &[class*="active"] {
                 display: none;
             }
@@ -80,6 +83,7 @@ textarea {
         display: none !important;
     }
 }
+
 .sStylerWrp_select {
     display: inline-block;
     vertical-align: middle;
@@ -105,6 +109,7 @@ textarea {
         display: none;
     }
 }
+
 .dropdown {
     position: relative;
     user-select: none;
@@ -112,16 +117,16 @@ textarea {
         padding-right: 40px;
         line-height: $form-element-height - 2;
         cursor: default;
-        > * {
+        >* {
             display: flex;
             align-items: center;
             white-space: nowrap;
             overflow: auto;
             cursor: default;
             &::-webkit-scrollbar {
-                display:none;
+                display: none;
             }
-            > img {
+            >img {
                 margin-right: 7px;
             }
         }
@@ -135,7 +140,7 @@ textarea {
             transition: transform .32s ease;
         }
     }
-    > ul {
+    >ul {
         display: none;
         position: absolute;
         left: 0;
@@ -147,8 +152,8 @@ textarea {
         margin: -1px 0 0 0;
         background: $color2;
         border: 1px solid $color5;
-        > li {
-            > a {
+        >li {
+            >a {
                 display: flex;
                 align-items: center;
                 white-space: nowrap;
@@ -162,9 +167,9 @@ textarea {
                 letter-spacing: .7px;
                 cursor: default;
                 &::-webkit-scrollbar {
-                    display:none;
+                    display: none;
                 }
-                > img {
+                >img {
                     margin-right: 7px;
                 }
                 &:hover {
@@ -175,7 +180,7 @@ textarea {
         }
     }
     &.opened {
-        > ul {
+        >ul {
             display: block;
         }
     }
@@ -188,6 +193,7 @@ textarea {
         margin-right: 3px;
     }
 }
+
 .ems-form {
     position: relative;
     @at-root {
@@ -224,15 +230,15 @@ textarea {
         &:empty {
             display: none;
         }
-        > span,
-        > label,
+        >span,
+        >label,
         #lnkSifremiUnuttum {
             font-family: $font2;
             font-size: 15px;
         }
         &.chk-padding {
             padding-left: 20px;
-            > .checkbox {
+            >.checkbox {
                 position: absolute;
                 left: 0;
             }
@@ -241,7 +247,7 @@ textarea {
             input {
                 width: 100% !important;
                 padding-right: 60px;
-                + * {
+                +* {
                     width: auto;
                     position: absolute;
                     right: 20px;
@@ -256,6 +262,7 @@ textarea {
         animation: show .5s ease;
     }
 }
+
 //captcha
 [id$="divCaptcha"] {
     position: relative;
@@ -294,21 +301,27 @@ textarea {
 .xmlForm {
     #dvSehirBilgi {
         @extend .ems-field;
+        margin-top: 10px;
     }
 }
+
 .xmlForm_btnGonder {
     margin-top: 30px;
     text-align: left;
 }
+
 a.btnXMLFORM {
     min-width: 180px;
 }
+
 .xmlFormHeader {
     display: none;
 }
+
 .xmlFormCaptcha {
     margin-top: 20px;
 }
+
 .prmSehir {
     @extend .ems-form-label;
     display: block !important;

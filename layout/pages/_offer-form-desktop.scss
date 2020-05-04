@@ -1,0 +1,379 @@
+.show-offer-popup {
+    .offer-popup {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #000;
+        position: fixed;
+        top: 30%;
+        width: 50%;
+        text-align: center;
+        z-index: 999999;
+        background: #fff;
+        left: 25%;
+        .header {
+            .close-offer {
+                float: right;
+                padding: 5px 10px 0 0;
+                font-size: 20px;
+                &:after {
+                    content: "X";
+                }
+            }
+        }
+        .body {
+            .body-content {
+                font-size: 26px;
+            }
+            .body-footer {
+                display: flex;
+                justify-content: space-evenly;
+                a {
+                    border: 1px solid #ddd;
+                    padding: 12px 50px;
+                    border-radius: 5px;
+                    margin: 20px;
+                    &:hover {
+                        border: 1px solid #000000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.offer-popup {
+    display: none;
+}
+
+.popup-offer-ready {
+    .offer-form-page {
+        padding: 22px 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        margin: 15px;
+        .offer-form-inside {
+            .offer-badge {
+                font-size: 18px !important;
+                margin: 0 0 15px 0px;
+                small {
+                    font-weight: bold;
+                    font-size: 22px;
+                }
+            }
+            .all-offer-remove {
+                text-decoration: underline;
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+            .all-offer {
+                li {
+                    margin-bottom: 25px;
+                    a {
+                        width: 22px;
+                        height: 22px;
+                        border-radius: 100%;
+                        background-color: #000;
+                        margin-right: 6px;
+                        &:before {
+                            content: "-";
+                            font-size: 30px;
+                            line-height: 17px;
+                            color: #fff;
+                            padding-left: 6px;
+                        }
+                        span {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .ems-form-inner {
+            padding: 24px 48px;
+            .zipUp {
+                margin: 10px 0;
+                .zipUp-title {
+                    display: flex;
+                    padding: 5px 20px;
+                    border: 1px solid #000;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    flex-direction: row;
+                    width: 40%;
+                    .icon-dosya-ekle {
+                        font-size: 25px;
+                        padding-right: 5px;
+                    }
+                    .upload-label {
+                        line-height: 2;
+                    }
+                }
+                .zipUp-content {
+                    margin-top: 15px;
+                    .file-item {
+                        display: flex;
+                        flex-direction: row;
+                        .logo {
+                            margin-right: 15px;
+                            img {
+                                width: 50px;
+                            }
+                        }
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+            .contact-file {
+                display: none;
+            }
+            .col-3 {
+                .ems-field {
+                    span {
+                        display: block !important;
+                    }
+                }
+            }
+            .col-4 {
+                .contact-preference {
+                    .icon-checkbox {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+                .icon-checkbox-active {
+                    width: 18px;
+                    height: 18px;
+                }
+                .contact-pre-kvkk {
+                    margin-top: 15px;
+                    small {
+                        span {
+                            &:last-child {
+                                label {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .xmlForm_btnGonder {
+            th {
+                text-align: -webkit-right;
+                .btnDefault {
+                    background: #fff;
+                    color: #b51f2a;
+                    border: 1px solid #000;
+                    border-radius: 5px;
+                    display: flex;
+                    width: 0;
+                    &:before {
+                        content: '\e907';
+                        font-family: 'IcoMoon';
+                        font-size: 25px;
+                        padding-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.popup-offer-ready {
+    .popup-offer {
+        height: 100%;
+        position: fixed;
+        top: 55px;
+        background: #fff;
+        right: 0;
+        width: 400px;
+        display: block;
+        z-index: 999;
+        border-left: 1px solid #ddd;
+        .offer-header {
+            justify-content: center;
+            .offer-close-btn {
+                position: absolute;
+                left: 30px;
+                top: 18px;
+                font-size: 24px;
+                font-weight: bold;
+                &:before {
+                    content: "<";
+                }
+            }
+            >span {
+                font-size: 26px;
+                font-weight: bold;
+                padding-top: 20px;
+            }
+            .mobil-badge {
+                padding: 20px 10px 0 0;
+                .badge {
+                    left: 133px;
+                }
+            }
+        }
+        .offer-body {
+            .offer-section-2 {
+                .offer-form-page {
+                    padding: 22px 10px !important;
+                    border: 1px solid rgba(0, 0, 0, 0.5) !important;
+                    border-radius: 5px !important;
+                    margin: 15px !important;
+                }
+            }
+        }
+        .inside {
+            display: none;
+        }
+    }
+}
+
+.xmlIcerikHtml {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .offer-form-inside {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        margin: 50px 0 30px 0;
+    }
+    .ems-form-inner {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        .col-1 {
+            .contact-message {
+                margin-top: 5px;
+            }
+        }
+        .col-2 {
+            .zipUp {
+                margin-top: 30px;
+                .zipUp-title {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    padding: 5px 20px;
+                    border: 1px solid #000;
+                    border-radius: 5px;
+                    width: 12%;
+                    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.28);
+                    cursor: pointer;
+                    i {
+                        font-size: 23px;
+                    }
+                    .upload-label {
+                        padding-left: 5px;
+                        line-height: 23px;
+                    }
+                }
+                .zipUp-content {
+                    margin-top: 20px;
+                    span {
+                        &:first-child {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .contact-file {
+                margin-top: 20px;
+            }
+        }
+        .col-3 {
+            margin-top: 30px;
+            .ems-field {
+                span {
+                    display: block !important;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        .col-4 {
+            margin-top: 30px;
+            .contact-preference {
+                margin-top: 10px;
+            }
+            .contact-pre-kvkk {
+                margin-top: 20px;
+                div {
+                    margin-bottom: 5px;
+                }
+                small {
+                    span {
+                        font-weight: bold;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pageFormPreview_btnFormPreviewYazdir {
+    margin-bottom: 50px;
+    display: flex;
+    margin: 0 190px;
+    justify-content: flex-end;
+    align-self: center;
+    margin-bottom: 50px;
+}
+
+.popup-offer {
+    display: none;
+    .offer-header {
+        a {
+            display: flex;
+            justify-content: flex-end;
+            font-size: 30px;
+            padding-right: 20px;
+            &:before {
+                content: "x";
+            }
+        }
+    }
+    .offer-section {
+        iframe {
+            height: -webkit-fill-available;
+            padding-bottom: 0 !important;
+            width: 100%;
+        }
+        .inside {
+            padding: 40px;
+            ul {
+                li {
+                    padding-bottom: 20px;
+                    .focus-offer-form-btn {
+                        text-decoration: underline;
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        font-size: 17px;
+                        .icon-Klima {
+                            font-size: 15px;
+                        }
+                        i {
+                            width: 40px;
+                            font-size: 35px;
+                            margin-right: 15px;
+                            text-align: center
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.documentation {
+    margin: 50px 15px 0 42px;
+    h1 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .documentation-search {
+        display: flex;
+        flex-direction: row;
+        input {
+            width: 25%;
+            margin-right: 50px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        .documentation-select {
+            display: flex;
+            flex-direction: row;
+            margin-top: 0;
+            .sStylerMainWrp {
+                margin-right: 50px;
+                width: 250px;
+            }
+            .sStylerWrp_select {
+                line-height: 39px;
+                height: 40px;
+                border-radius: 5px;
+            }
+            .document-search-btn {
+                border: 1px solid #ddd;
+                height: 40px;
+                border-radius: 5px;
+                padding: 10px 45px;
+                &:hover {
+                    border: 1px solid #717171;
+                    background: #b51f2a;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .documentation-body {
+        margin-top: 50px;
+        ul {
+            li {
+                border-bottom: 1px solid #ddd;
+                padding: 12px 0;
+                &:last-child {
+                    border-bottom: unset;
+                }
+                .documentation-list {
+                    display: flex;
+                    flex-direction: row;
+                    .documentation-list-icon {
+                        width: 7%;
+                    }
+                    >div {
+                        width: 83%;
+                        display: flex;
+                        flex-direction: row;
+                        .documentation-title {
+                            width: 18%;
+                            align-self: center;
+                        }
+                        .documentation-desc {
+                            width: 65%;
+                            align-self: center;
+                        }
+                    }
+                    .documentation-download {
+                        width: 10%;
+                        align-self: center;
+                        border: 1px solid;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        text-align: center;
+                        a {
+                            padding: 10px;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

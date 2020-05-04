@@ -13,6 +13,7 @@
     height: 100%;
     overflow-x: hidden;
 }
+
 .jconfirm-bg {
     position: fixed;
     left: 0;
@@ -21,17 +22,20 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
 }
+
 .jconfirm-box-container {
     margin-left: auto;
     margin-right: auto;
     width: calc(100% - 20px);
     transition: transform;
 }
+
 .jconfirm-box {
     position: relative;
     background: $color2;
     outline: none;
 }
+
 .jconfirm-closeIcon {
     position: absolute;
     right: 20px;
@@ -40,15 +44,24 @@
     height: 32px;
     cursor: pointer;
     background: url(/images/frontend/close.svg);
+    i {
+        &:before {
+            content: "x";
+            font-size: 25px;
+            color: #000;
+        }
+    }
 }
 
 .jconfirm-content-pane {
     transition-property: height;
 }
+
 .jconfirm-content {
     height: 100%;
     min-height: 550px;
 }
+
 .jconfirm-title-c {
     display: none;
 }
@@ -63,15 +76,15 @@ $p: 20px;
 .popupDefault {
     text-align: left;
     padding: $p;
-    > [class*="_mesaj"],
-    > [class*="_aciklama"] {
+    >[class*="_mesaj"],
+    >[class*="_aciklama"] {
         margin-top: 10px;
     }
-    
-    > [class$="Yazdir"] {
+    >[class$="Yazdir"] {
         display: none;
     }
 }
+
 .popupTitleDefault {
     position: sticky;
     top: 0;

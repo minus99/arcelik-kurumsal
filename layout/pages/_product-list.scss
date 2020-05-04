@@ -1,82 +1,159 @@
-.ems-prd-list{
-    margin-top:40px;
-}
-
-.main-cat-body{
-    .ems-prd-list-navigasyon{
-        .urunNavigasyon{
-            padding:20px 0px;
-            > span{
-                font-size:25px;
+.ems-prd-list {
+    margin-top: 40px;
+    &-left {
+        .kutuKategori {
+            display: block;
+            .sel.act.s2 {
+                >a {
+                    display: none;
+                }
+            }
+            .sel.s2 {
+                >a {
+                    display: none;
+                }
+                >ul {
+                    padding-left: 0 !important;
+                    .sel.act.s3 {
+                        display: block;
+                    }
+                    li {
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
             }
         }
     }
-    .ems-prd-list-left{
-        .ems-prd-list-filter{
-            display: none;
-        }        
+}
+
+.ems-prd-list-navigasyon {
+    .custom-category-dropdown {
+        margin-bottom: 30px;
+        .dropdown-header {
+            line-height: unset !important;
+            padding-right: 0 !important;
+            border: unset !important;
+            &:after {
+                top: 70% !important;
+            }
+        }
+        >ul {
+            border: unset !important;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: -3px 3px 15px 0 rgba(103, 103, 103, 0.29);
+            margin-top: 12px;
+            max-height: 380px !important;
+            li {
+                a {
+                    padding: 0 22px !important;
+                }
+            }
+        }
     }
-    .ems-prd-list-right{
-        .ems-prd-list-sub-cats{
+    .urunNavigasyon {
+        display: none;
+        padding: 20px 0px;
+        >span {
+            font-size: 25px;
+        }
+    }
+}
+
+.main-cat-body {
+    .ems-prd-list-navigasyon {
+        .custom-category-dropdown {
+            .dropdown-header {
+                line-height: unset !important;
+                padding-right: 0 !important;
+                border: unset !important;
+            }
+            >ul {
+                border: unset !important;
+                background: #fff;
+                box-shadow: -3px 3px 15px 0 rgba(103, 103, 103, 0.29);
+                margin-top: 12px;
+                max-height: 380px !important;
+                li {
+                    a {
+                        padding: 0 22px !important;
+                    }
+                }
+            }
+        }
+        .urunNavigasyon {
+            padding: 20px 0px;
+            >span {
+                font-size: 25px;
+            }
+        }
+    }
+    .ems-prd-list-left {
+        .ems-prd-list-filter {
+            display: none;
+        }
+    }
+    .ems-prd-list-right {
+        .ems-prd-list-sub-cats {
             display: none !important;
         }
     }
 }
 
-.ems-prd-list-cover{
+.ems-prd-list-cover {
     overflow: hidden;
 }
 
-
-.ems-prd-list-top-bar{
-    margin-bottom:30px;
+.ems-prd-list-top-bar {
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap:wrap;
-    .ems-prd-list-navigasyon{
-        width:100%;
-        .navigasyon{
-            span{
+    flex-wrap: wrap;
+    .ems-prd-list-navigasyon {
+        width: 100%;
+        .navigasyon {
+            span {
                 display: block;
-                font-size:0px;
-                > a{
-                    font-size:25px;
+                font-size: 0px;
+                >a {
+                    font-size: 25px;
                 }
-                .navigasyonSeviye1{
-
-                }
-                .navigasyonSeviye2{
+                .navigasyonSeviye1 {}
+                .navigasyonSeviye2 {
                     display: none;
                 }
             }
         }
     }
-    .ems-prd-list-btn-area{
-        > div{
-            width:100%;
+    .ems-prd-list-btn-area {
+        >div {
+            width: 100%;
         }
         width:100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .ems-prd-list-btns{
+        .ems-prd-list-btns {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .btn-filter-popup{
-                border:1px solid $color1;
-                padding:7px 0px;
-                min-width:85px;
+            .btn-filter-popup {
+                border: 1px solid $color1;
+                padding: 7px 0px;
+                min-width: 85px;
                 text-align: center;
                 border-radius: 3px;
                 text-transform: uppercase;
                 font-size: 12px;
             }
-            .btn-catalog{
-                border:1px solid $color1;
-                padding:7px 0px;
-                min-width:200px;
+            .btn-catalog {
+                border: 1px solid $color1;
+                padding: 7px 0px;
+                min-width: 200px;
                 text-align: center;
                 border-radius: 3px;
                 text-transform: uppercase;
@@ -86,147 +163,314 @@
     }
 }
 
-.ems-prd-list{
-    &-left{
-        .kutuOzellikFiltre{
+.ems-prd-list {
+    &-left {
+        .kutuOzellikFiltre {
             //display: block;
             background: $color2;
-            margin-top:40px;
-            .filter-header-text{
+            margin-top: 40px;
+            .filter-header-text {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
             }
-            .urunKiyaslamaOzellik_ozellikAd{
+            .urunKiyaslamaOzellik_ozellikAd {
                 background-color: $color2;
             }
         }
     }
-    &-right{
-        
+    &-right {
+        .ems-prd-list-sub-cats {
+            .categories-first-lvl {
+                display: flex;
+                flex-direction: column;
+                h1 {
+                    font-size: 36px;
+                    font-weight: bold;
+                    margin: 10px 20px;
+                }
+                .categories-second-lvl {
+                    display: flex;
+                    flex-wrap: wrap;
+                    li {
+                        width: 50%;
+                        a {
+                            padding: 10px;
+                            border: 1px solid #ddd;
+                            width: 90%;
+                            margin: 7px;
+                            border-radius: 5px;
+                            text-align: center;
+                            &:hover {
+                                border: 1px solid #000;
+                                background: #fff;
+                                color: #000;
+                            }
+                        }
+                        .active {
+                            border: 1px solid #000;
+                            background: #fff;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-.section-cat-sub{
+.section-cat-sub {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    .section-cat-sub-list-left{
+    .section-cat-sub-list-left {
         display: none;
     }
-    .section-cat-sub-list{
-        ul{
+    .section-cat-sub-list {
+        ul {
             display: flex;
             align-items: flex-start;
             flex-wrap: wrap;
             justify-content: space-between;
-            li{
-                width:calc( (100% / 2) - 7.5px);
-                margin-bottom:15px;
-                &:hover{
-                    a{
+            li {
+                width: calc( (100% / 2) - 7.5px);
+                margin-bottom: 15px;
+                &:hover {
+                    a {
                         box-shadow: none;
                         transition: box-shadow .4s ease-out;
                     }
                 }
-                a{
+                a {
                     border-radius: 5px;
                     box-shadow: 0 6px 12px 0 rgba(150, 150, 150, 0.16);
                     border: 1px solid $color1;
                     display: flex;
-                    flex-wrap:wrap;
-                    span{
-                        width:100%;
+                    flex-wrap: wrap;
+                    span {
+                        width: 100%;
                         box-shadow: 0 6px 12px 0 rgba(150, 150, 150, 0.16);
-                        border-top:1px solid $color7;
+                        border-top: 1px solid $color7;
                         border-radius: 5px;
-                        padding:17px;
+                        padding: 17px;
                         font-weight: bold;
                         line-height: 1.19;
-                        color:$color1;
+                        color: $color1;
                         text-align: center;
-                        font-size:14px;
+                        font-size: 14px;
                     }
                 }
             }
         }
     }
 }
-ul.emosInfinite{
-    width:100%;
+
+ul.emosInfinite {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    .ems-prd{
-        border-top:1px solid #ddd;        
-        width:100%;
-        &:last-child{
-            border-top:1px solid #ddd;        
+    .ems-prd {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 60px;
+        border-bottom: 1px solid #ddd;
+        &:last-child {
+            border-bottom: unset;
         }
-        &-inner{
+        &-inner {
             display: flex;
-            justify-content: space-between;
-            padding:20px;
-        }
-        &-body{
-            width:calc(100% - 130px);
-            margin-left:20px;
-        }
-        &-image{
-            width:110px;
-        }
-        &-category{
-            span.emos_invisible{
+            flex-direction: row;
+            justify-content: space-around;
+            .ems-prd-code {
                 display: block !important;
-                overflow:hidden;
-                text-overflow:ellipsis;
+                order: 3;
+                align-self: center;
+                padding-top: 5px;
+            }
+            /*
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 6px;
+            // border: 1px solid #ddd;
+            border-radius: 6px;
+            margin: 20px 17px;
+            // box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            */
+        }
+        &-body {
+            // margin: 17px 0 10px 0;
+            // border-top: 1px solid #ddd;
+            // padding: 20px 13px;
+            order: 2;
+            .ems-prd-category {
+                display: block;
+            }
+            .obj-mobile {
+                span {
+                    font-size: 14px;
+                }
+            }
+            .ems-prd-name {
+                font-size: 15px;
+            }
+        }
+        &-image {
+            order: 1;
+            display: inline-block;
+            img {
+                border: 1px solid #888888;
+                border-radius: 5px;
+                max-width: 90px;
+            }
+        }
+        &-category {
+            span.emos_invisible {
+                display: block !important;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 white-space: nowrap;
             }
         }
-        &-name{
-            margin-top:20px;
-            a{
+        &-name {
+            margin-top: 20px;
+            width: 160px;
+            height: auto;
+            a {
                 font-weight: bold;
             }
         }
-        &-offer-btn{
+        &-offer-btn {
             text-align: right;
-            margin-top:10px;
+            margin-top: 22px;
+            position: relative;
+            right: 15px;
+            a {
+                position: absolute;
+                right: -84px;
+            }
+            .getOfferButton.selected {
+                span {
+                    &:first-child {
+                        display: none
+                    }
+                    &:last-child {
+                        display: block !important;
+                    }
+                }
+            }
         }
     }
 }
-
-
-
 
 
 /* Mutfak Tipi Ürün Liste 2 Li gösterim  */
 
-.prd-list-alternate{
-    .ems-prd-list{
-        margin-top:0px;
+.prd-list-alternate {
+    .ems-prd-list {
+        margin-top: 0px;
     }
-    .ems-prd-list-left , .ems-prd-list-sub-cats , .ems-prd-list-btn-area{
+    .ems-prd-list-left,
+    .ems-prd-list-sub-cats,
+    .ems-prd-list-btn-area {
         display: none;
     }
-    .ems-prd-list-right{
-        width:100%;
-        ul.emosInfinite{
-            .ems-prd{
-                &-description{
-                    span{
-                        ul{
-                            li{
-                                font-size:19px !important;       
+    .ems-prd-list-right {
+        width: 100%;
+        ul.emosInfinite {
+            .ems-prd {
+                &-description {
+                    margin-top: 20px;
+                    span {
+                        display: block;
+                        ul {
+                            li {
+                                font-size: 19px !important;
+                                margin-bottom: 15px;
                             }
                         }
                     }
                 }
-                &-image{
-                    a{
+                &-image {
+                    a {
                         display: block;
-                        width:100%;
-                        img{
-                            width:100%;
+                        width: 100%;
+                        img {
+                            width: 100%;
+                            border: unset;
+                            max-width: unset;
+                        }
+                    }
+                }
+            }
+            .ems-prd {
+                width: 100%;
+                &:last-child {}
+                &-inner {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 6px;
+                    border: 1px solid #ddd;
+                    border-radius: 6px;
+                    margin: 20px 17px;
+                    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+                    .ems-prd-code {
+                        display: none !important;
+                    }
+                }
+                &-body {
+                    margin: 17px 0 10px 0;
+                    border-top: 1px solid #ddd;
+                    padding: 20px 13px;
+                    .ems-prd-category {
+                        display: none;
+                    }
+                    .obj-mobile {
+                        span {
+                            font-size: 20px;
+                        }
+                    }
+                    .ems-prd-name {
+                        font-size: 17px;
+                    }
+                }
+                &-image {
+                    img {
+                        border-radius: 7px;
+                    }
+                }
+                &-category {
+                    span.emos_invisible {
+                        display: block !important;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+                &-name {
+                    margin-top: 0;
+                    width: 100%;
+                    a {
+                        font-weight: bold;
+                    }
+                }
+                &-offer-btn {
+                    text-align: right;
+                    margin-top: 10px;
+                    right: 0;
+                    a {
+                        position: unset;
+                        right: unset;
+                    }
+                    .getOfferButton.selected {
+                        span {
+                            &:first-child {
+                                display: none
+                            }
+                            &:last-child {
+                                display: block !important;
+                            }
                         }
                     }
                 }
@@ -234,5 +478,3 @@ ul.emosInfinite{
         }
     }
 }
-
-

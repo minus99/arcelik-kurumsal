@@ -1,188 +1,266 @@
-.main-cat-body{
-    .ems-prd-list-navigasyon{
-        .urunNavigasyon{
-            padding:20px 0px;
-            > span{
-                a{
-                    font-size:30px !important;
+.main-cat-body {
+    .ems-prd-list-navigasyon {
+        .urunNavigasyon {
+            display: block;
+            padding: 20px 0px;
+            >span {
+                a {
+                    font-size: 30px !important;
                 }
                 font-weight:bold;
                 color:$color1 !important;
             }
         }
     }
-    .ems-prd-list-left{
+    .ems-prd-list-left {
         display: none;
-        .ems-prd-list-filter{
+        .ems-prd-list-filter {
             display: none;
-        }        
+        }
     }
-    .ems-prd-list-right{
-        margin:0 auto;
-        .ems-prd-list-sub-cats{
+    .ems-prd-list-right {
+        margin: 0 auto;
+        .ems-prd-list-sub-cats {
             display: none !important;
         }
     }
 }
 
-
-.ems-prd-list{
+.ems-prd-list {
     display: flex !important;
     flex-wrap: wrap;
-    position: relative;    
-    .ems-prd-list-top-bar{
-        .ems-prd-list-navigasyon{
-            width:70%;
-            .navigasyon{
-                span{
+    position: relative;
+    .ems-prd-list-top-bar {
+        margin-top: 30px;
+        .ems-prd-list-navigasyon {
+            width: 70%;
+            .custom-category-dropdown {
+                display: none !important;
+            }
+            .navigasyon {
+                span {
                     display: block;
-                    font-size:20px;
-                    color:$color7;
-                    > a{
-                        font-size:20px;
-                        margin:0px 10px;
+                    font-size: 20px;
+                    color: $color7;
+                    >a {
+                        font-size: 20px;
+                        margin: 0px 10px;
                     }
-                    .navigasyonSeviye2{
+                    .navigasyonSeviye2 {
                         display: inline-block;
                     }
                 }
             }
+            .urunNavigasyon {
+                display: block;
+            }
         }
-        .ems-prd-list-btn-area{
-            width:30%;
-                .ems-prd-list-btns{
-                    justify-content: flex-end;                
-                }
+        .ems-prd-list-btn-area {
+            width: 30%;
+            .ems-prd-list-btns {
+                justify-content: flex-end;
+            }
         }
     }
-    &-left{
+    &-left {
         position: sticky;
-        top:140px;
+        top: 140px;
         height: 100%;
-        width:350px;
-        border-right:1px solid $color3;
-        .ems-prd-list-filter{
-            width:300px;
-            padding-left:20px;
-            padding-right:30px;
-            .kutuHeaderOzellikFiltre{
+        width: 350px;
+        border-right: 1px solid $color3;
+        .ems-prd-list-filter {
+            width: 300px;
+            padding-left: 20px;
+            padding-right: 30px;
+            .main-cat {
+                &:before {
+                    display: none;
+                }
+            }
+            .kutuHeaderOzellikFiltre {
                 display: none;
             }
         }
     }
-    &-right{
-        width:calc(100% - 350px);
-        .ems-prd-list-sub-cats{
-            .kutuKategori{
-                ul{
+    &-right {
+        width: calc(100% - 350px);
+        .ems-prd-list-sub-cats {
+            .categories-first-lvl {
+                display: flex;
+                flex-direction: column;
+                h1 {
+                    font-size: 40px;
+                    font-weight: bold;
+                    margin: 0 30px;
+                }
+                .categories-second-lvl {
+                    display: flex;
+                    flex-wrap: wrap;
+                    li {
+                        width: auto;
+                        a {
+                            padding: 20px !important;
+                            border: 1px solid #dddddd;
+                            width: 250px !important;
+                            margin: 20px 0 0 30px !important;
+                            border-radius: 5px;
+                            text-align: center;
+                            font-weight: bold;
+                            &:hover {
+                                border: 1px solid #000;
+                                background: #fff;
+                                color: #000;
+                            }
+                        }
+                    }
+                    .active {
+                        border: 1px solid #000;
+                        background: #fff;
+                        color: #000;
+                    }
+                }
+            }
+            .kutuKategori {
+                ul {
                     display: flex;
                     max-width: 1230px;
-                    width:100%;
-                    margin:0 auto;
-                    padding:0px;
-                    > li{
-                        width:100%;
-                        &:before{
-                            content:none;
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: 0px;
+                    >li {
+                        width: 100%;
+                        &:before {
+                            content: none;
                         }
-                        > a{
-                            font-size:35px;
+                        >a {
+                            font-size: 35px;
                         }
-                        > ul{
+                        >ul {
                             flex-wrap: wrap;
-                            > li{
+                            >li {
                                 box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
                                 border: solid 0.5px #888888;
                                 border-radius: 3px;
-                                width:calc((100% / 4) - 30px);
-                                margin:10px 15px 10px 15px;
+                                width: calc((100% / 4) - 30px);
+                                margin: 10px 15px 10px 15px;
                                 transition: all .4s;
-                                &:hover{
+                                &:hover {
                                     box-shadow: none;
                                 }
-                                a{
+                                a {
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
-                                    padding:10px;
-                                    font-size:20px;
+                                    padding: 10px;
+                                    font-size: 20px;
                                 }
-                                &.act{
-                                    border:2px solid $color1;
-                                    a{
-
-                                    }
+                                &.act {
+                                    border: 2px solid $color1;
+                                    a {}
                                 }
                             }
                         }
                     }
                 }
             }
-        }   
-        .ems-prd-list-prds{
-            max-width:1200px;
-            margin:0 auto;
+        }
+        .ems-prd-list-prds {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
+    .sel.act.s3 {
+        >ul {
+            display: block !important;
         }
     }
 }
 
-.section-cat-sub{
-    .section-cat-sub-list{
-        ul{
+.section-cat-sub {
+    .section-cat-sub-list {
+        ul {
             justify-content: flex-start;
-            li{
-                width:calc( (100% / 4) - 25px);
-                margin:0px 12.5px 110px 12.5px;
-                a{  
-                    span{
-                    }
+            li {
+                width: calc( (100% / 4) - 25px);
+                margin: 0px 12.5px 110px 12.5px;
+                a {
+                    span {}
                 }
             }
         }
     }
 }
 
-
-
-.emosInfinite{
+.emosInfinite {
+    width: 100%;
     display: flex;
-    .ems-prd{
-        width:calc((100% / 4) - 35px) !important;
+    flex-wrap: wrap;
+    .ems-prd {
+        width: calc((100% / 4) - 35px) !important;
         border-radius: 6px;
-        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-        border: solid 0.3px #000000;
-        border:1px solid #ddd;
-        border-radius: 6px;
-        margin:17.5px;
-        &-inner{
-            padding:20px 10px;
+        margin: 17.5px;
+        border-bottom: unset !important;
+        &-inner {
+            padding: 20px !important;
             flex-wrap: wrap;
-            .ems-prd-image{
-                width:100%;
-                padding-bottom:10px;
-                border-bottom:1px solid $color3;
+            margin: 0 !important;
+            display: flex;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            .ems-prd-code {
+                display: none !important;
             }
-            .ems-prd-body{
-                width:100%;
-                margin-top:20px;
-                .ems-prd-name{
-                    margin-bottom:10px;
+            .ems-prd-image {
+                width: 100%;
+                padding-bottom: 10px;
+                border-bottom: 1px solid $color3;
+                img {
+                    border: unset;
+                    border-radius: 5px;
+                    max-width: unset;
                 }
-                .ems-prd-description{
-                    min-height:50px;
-                    margin-bottom:10px;
-                    span.emos_invisible{
+            }
+            .ems-prd-body {
+                width: 100%;
+                margin-top: 20px;
+                // margin: 0 !important;
+                border-top: unset !important;
+                padding: 0 !important;
+                .ems-prd-name {
+                    margin-bottom: 10px;
+                }
+                .ems-prd-description {
+                    min-height: 50px;
+                    margin-bottom: 10px;
+                    span.emos_invisible {
                         display: block !important;
-                        ul{
-                            li{
+                        ul {
+                            li {
                                 line-height: 2;
-                                font-size:13px;
+                                font-size: 13px;
                             }
                         }
                     }
                 }
-                .ems-prd-offer-btn{
+                .ems-prd-offer-btn {
                     text-align: right;
+                    position: relative;
+                    right: 0;
+                    a {
+                        position: unset;
+                        right: 0;
+                    }
+                    .getOfferButton.selected {
+                        span {
+                            &:first-child {
+                                display: none
+                            }
+                            &:last-child {
+                                display: block !important;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -192,29 +270,29 @@
 
 /* Mutfak Tipi Ürün Liste 2 Li gösterim  */
 
-.prd-list-alternate{
-    .ems-prd-list-right{
-        ul.emosInfinite{
+.prd-list-alternate {
+    .ems-prd-list-right {
+        ul.emosInfinite {
             justify-content: space-between;
-            .ems-prd{
-                margin-bottom:100px;
-                width:calc((100% / 2) - 60px) !important;
-                &-name{
-                    font-size:30px;
+            .ems-prd {
+                margin-bottom: 100px;
+                width: calc((100% / 2) - 60px) !important;
+                &-name {
+                    font-size: 30px;
                 }
-                &-description{
-                    span{
-                        ul{
-                            li{
-                                font-size:19px !important;       
+                &-description {
+                    span {
+                        ul {
+                            li {
+                                font-size: 19px !important;
                             }
                         }
                     }
                 }
-                &-image{
-                    a{
-                        img{
-                            height:375px;
+                &-image {
+                    a {
+                        img {
+                            height: 375px;
                             object-fit: contain;
                         }
                     }

@@ -51,6 +51,8 @@
 @import 'layout/pages/404';
 @import 'layout/pages/contact';
 @import 'layout/pages/cozumler';
+@import 'layout/pages/offer-form';
+@import 'layout/pages/documentation';
 //DESKTOP
 @supports (display: grid) {
     @include setMediaScreen(min-width, $breakpoint-medium) {
@@ -89,6 +91,8 @@
         @import 'layout/pages/cozumler-desktop';
         @import 'layout/pages/404-desktop';
         @import 'layout/pages/contact-desktop';
+        @import 'layout/pages/documentation-desktop';
+        @import 'layout/pages/offer-form-desktop';
         //DESKTOP MINI
         @include setMediaScreen(max-width, $breakpoint-large) {
             //HEADER
