@@ -57,6 +57,11 @@
 
 .urunKiyaslamaOzellik_ozellikIcerik {
     padding: 0 0 15px;
+    >div {
+        a {
+            margin-top: 20px;
+        }
+    }
 }
 
 .urunKiyaslamaOzellik {

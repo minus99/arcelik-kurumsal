@@ -20,6 +20,7 @@
 [class*="base64-"] {
     background-repeat: no-repeat;
 }
+
 .base64 {
     @extend [class*="base64-"];
     &-minus {
@@ -74,7 +75,6 @@
         border-style: solid;
         border-color: transparent transparent transparent currentColor;
     }
-
     .is-play & {
         &::before,
         &::after {
@@ -95,8 +95,8 @@
     }
 }
 
- 
-  [class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     display: inline-block;
@@ -106,140 +106,177 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    font-size:40px;
-  
+    font-size: 40px;
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
 
+svg {
+    &.icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+        vertical-align: middle;
+        font-size: 32px;
+    }
+}
 
-  svg{
-    &.icon{
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      stroke-width: 0;
-      stroke: currentColor;
-      fill: currentColor;
-      vertical-align: middle;
-      font-size: 32px;
-    }  
-  }
+.icon-solar:before {
+    content: "\e900";
+}
 
-
-  .icon-search:before {
+.icon-search:before {
     content: "\e905";
-  }
-  .icon-d-model:before {
+}
+
+.icon-d-model:before {
     content: "\e906";
-  }
-  .icon-178927:before {
+}
+
+.icon-178927:before {
     content: "\e907";
-  }
-  .icon-ankastre:before {
+}
+
+.icon-ankastre:before {
     content: "\e908";
-  }
-  .icon-aydinlatma2:before {
+}
+
+.icon-aydinlatma2:before {
     content: "\e909";
-  }
-  .icon-bakim:before {
+}
+
+.icon-bakim:before {
     content: "\e90a";
-  }
-  .icon-beyazesya:before {
+}
+
+.icon-beyazesya:before {
     content: "\e90b";
-  }
-  .icon-buzdolabi:before {
+}
+
+.icon-buzdolabi:before {
     content: "\e90c";
-  }
-  .icon-dosya-ekle:before {
+}
+
+.icon-dosya-ekle:before {
     content: "\e90e";
-  }
-  .icon-dropdown:before {
+}
+
+.icon-dropdown:before {
     content: "\e90f";
-  }
-  .icon-ekle:before {
+}
+
+.icon-ekle:before {
     content: "\e910";
-  }
-  .icon-esnek-tasarim:before {
+}
+
+.icon-esnek-tasarim:before {
     content: "\e911";
-  }
-  .icon-giris-alan:before {
+}
+
+.icon-giris-alan:before {
     content: "\e912";
-  }
-  .icon-goruntuleme:before {
+}
+
+.icon-goruntuleme:before {
     content: "\e913";
-  }
-  .icon-hakkimizda:before {
+}
+
+.icon-hakkimizda:before {
     content: "\e914";
-  }
-  .icon-hastane:before {
+}
+
+.icon-hastane:before {
     content: "\e915";
-  }
-  .icon-Header:before {
+}
+
+.icon-Header:before {
     content: "\e916";
-  }
-  .icon-ikon:before {
+}
+
+.icon-ikon:before {
     content: "\e917";
-  }
-  .icon-iletisime-gec:before {
+}
+
+.icon-iletisime-gec:before {
     content: "\e918";
-  }
-  .icon-Karsilastir:before {
+}
+
+.icon-Karsilastir:before {
     content: "\e919";
-  }
-  .icon-katalog:before {
+}
+
+.icon-katalog:before {
     content: "\e91a";
-  }
-  .icon-kitap:before {
+}
+
+.icon-kitap:before {
     content: "\e91b";
-  }
-  .icon-Klima:before {
+}
+
+.icon-Klima:before {
     content: "\e91c";
-  }
-  .icon-kullanim:before {
+}
+
+.icon-kullanim:before {
     content: "\e91d";
-  }
-  .icon-kurulum:before {
+}
+
+.icon-kurulum:before {
     content: "\e91e";
-  }
-  .icon-liste:before {
+}
+
+.icon-liste:before {
     content: "\e91f";
-  }
-  .icon-listeleme:before {
+}
+
+.icon-listeleme:before {
     content: "\e920";
-  }
-  .icon-lokasyon:before {
+}
+
+.icon-lokasyon:before {
     content: "\e921";
-  }
-  .icon-musteri:before {
+}
+
+.icon-musteri:before {
     content: "\e923";
-  }
-  .icon-musterihizmetleri:before {
+}
+
+.icon-musterihizmetleri:before {
     content: "\e924";
-  }
-  .icon-mutfakmobilya:before {
+}
+
+.icon-mutfakmobilya:before {
     content: "\e925";
-  }
-  .icon-sayfalandirma:before {
+}
+
+.icon-sayfalandirma:before {
     content: "\e926";
-  }
-  .icon-search1:before {
+}
+
+.icon-search1:before {
     content: "\e927";
-  }
-  .icon-sertifika:before {
+}
+
+.icon-sertifika:before {
     content: "\e928";
-  }
-  .icon-teklif-al:before {
+}
+
+.icon-teklif-al:before {
     content: "\e92a";
-  }
-  .icon-teknikcizim:before {
+}
+
+.icon-teknikcizim:before {
     content: "\e938";
-  }
-  .icon-uygulama:before {
+}
+
+.icon-uygulama:before {
     content: "\e939";
-  }
-  .icon-uzaktan-isleme-bakm:before {
+}
+
+.icon-uzaktan-isleme-bakm:before {
     content: "\e93a";
-  }
-  
+}

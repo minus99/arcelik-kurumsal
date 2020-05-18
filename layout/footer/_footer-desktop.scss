@@ -98,6 +98,47 @@
 
 .ems-page-search {
     .ga2 {
+        .kutuDefault.kutuKategori {
+            &:before {
+                content: "KATEGORİLER";
+                padding-left: 30px;
+                font-size: 40px;
+            }
+            .kutuBodyKategori {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    .s1 {
+                        &::before {
+                            display: none;
+                        }
+                        >a {
+                            display: none;
+                        }
+                        >ul {
+                            display: flex;
+                            flex-direction: row;
+                            padding-left: 0;
+                            .s2 {
+                                a {
+                                    padding: 20px;
+                                    border: 1px solid #dddddd;
+                                    width: 200px;
+                                    margin: 20px 0 0 30px;
+                                    border-radius: 5px;
+                                    text-align: center;
+                                    font-weight: bold;
+                                    line-height: 1;
+                                }
+                            }
+                        }
+                        +li {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
         .pageArama {
             padding: 50px 0 0px 50px;
             .pageDescDefault {

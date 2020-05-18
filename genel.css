@@ -180,7 +180,8 @@
   .is-play .i-play::after {
     right: 38%; }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   display: inline-block;
@@ -204,6 +205,9 @@ svg.icon {
   fill: currentColor;
   vertical-align: middle;
   font-size: 32px; }
+
+.icon-solar:before {
+  content: "\e900"; }
 
 .icon-search:before {
   content: "\e905"; }
@@ -1151,6 +1155,8 @@ textarea {
   display: inline-block;
   vertical-align: -0.1em;
   margin-right: 7px;
+  width: 18px;
+  height: 18px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2697,6 +2703,8 @@ ul.menuKategori b {
 
 .urunKiyaslamaOzellik_ozellikIcerik {
   padding: 0 0 15px; }
+  .urunKiyaslamaOzellik_ozellikIcerik > div a {
+    margin-top: 20px; }
 
 .urunKiyaslamaOzellik {
   position: relative;
@@ -3567,7 +3575,8 @@ ul.menuKategori b {
                   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.31);
                   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.31);
                   border: solid 1px #b51f2a; }
-                  .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div:hover > table > tbody > tr .suggest_urnsname_con b, .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div:hover > table > tbody > tr .suggest_urnsname_con span {
+                  .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div:hover > table > tbody > tr .suggest_urnsname_con b,
+                  .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div:hover > table > tbody > tr .suggest_urnsname_con span {
                     font-weight: bold; }
                 .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div > table > tbody > tr th {
                   width: 50px;
@@ -3575,10 +3584,7 @@ ul.menuKategori b {
                 .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div > table > tbody > tr .suggest_urnprice_con {
                   display: none; }
                 .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div > table > tbody > tr .suggest_urnsname_con {
-                  text-align: center;
-                  -webkit-transform: translateX(-50px);
-                  -ms-transform: translateX(-50px);
-                  transform: translateX(-50px); }
+                  text-align: center; }
                   .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div > table > tbody > tr .suggest_urnsname_con b {
                     font-weight: 500; }
           .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .dvTumunuGoster {
@@ -3972,13 +3978,13 @@ ul.menuKategori b {
         flex-wrap: wrap; }
 
 .ems-prd-list-navigasyon .custom-category-dropdown {
-  margin-bottom: 30px; }
+  margin-top: 30px; }
   .ems-prd-list-navigasyon .custom-category-dropdown .dropdown-header {
     line-height: unset !important;
     padding-right: 0 !important;
     border: unset !important; }
     .ems-prd-list-navigasyon .custom-category-dropdown .dropdown-header:after {
-      top: 70% !important; }
+      top: 74% !important; }
   .ems-prd-list-navigasyon .custom-category-dropdown > ul {
     border: unset !important;
     border-radius: 5px;
@@ -4232,7 +4238,7 @@ ul.emosInfinite {
             // box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
             */ }
       ul.emosInfinite .ems-prd-inner .ems-prd-code {
-        display: block !important;
+        display: block;
         -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
         order: 3;
@@ -4294,20 +4300,23 @@ ul.emosInfinite {
 
 .prd-list-alternate .ems-prd-list-right {
   width: 100%; }
-  .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-description {
-    margin-top: 20px; }
-    .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-description span {
-      display: block; }
-      .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-description span ul li {
-        font-size: 19px !important;
-        margin-bottom: 15px; }
-  .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-image a {
-    display: block;
-    width: 100%; }
-    .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-image a img {
-      width: 100%;
-      border: unset;
-      max-width: unset; }
+  .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd {
+    border-bottom: unset;
+    padding-bottom: unset; }
+    .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-description {
+      margin-top: 20px; }
+      .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-description span {
+        display: block; }
+        .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-description span ul li {
+          font-size: 19px !important;
+          margin-bottom: 15px; }
+    .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-image a {
+      display: block;
+      width: 100%; }
+      .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-image a img {
+        width: 100%;
+        border: unset;
+        max-width: unset; }
   .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd {
     width: 100%; }
     .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-inner {
@@ -4363,6 +4372,15 @@ ul.emosInfinite {
         display: none; }
       .prd-list-alternate .ems-prd-list-right ul.emosInfinite .ems-prd-offer-btn .getOfferButton.selected span:last-child {
         display: block !important; }
+
+.prd-list-alternate .ems-prd-list-navigasyon .urunNavigasyon {
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 0; }
+  .prd-list-alternate .ems-prd-list-navigasyon .urunNavigasyon .navigasyonSeviye1 h1 {
+    font-weight: normal; }
+  .prd-list-alternate .ems-prd-list-navigasyon .urunNavigasyon .navigation-full-path {
+    display: none; }
 
 .ems-page-product-detail-grid > div {
   margin-bottom: 100px; }
@@ -4448,6 +4466,22 @@ ul.emosInfinite {
       display: none; }
     .prd-detail-page-right .ems-prd-types {
       margin-top: 30px; }
+      .prd-detail-page-right .ems-prd-types > .swiper-container {
+        margin-bottom: 25px; }
+        .prd-detail-page-right .ems-prd-types > .swiper-container .ems-prd-types-title {
+          width: 100%;
+          font-size: 17px;
+          margin-bottom: 10px; }
+        .prd-detail-page-right .ems-prd-types > .swiper-container .swiper-slide {
+          width: 120px;
+          height: 80px; }
+          .prd-detail-page-right .ems-prd-types > .swiper-container .swiper-slide img {
+            -webkit-transition: margin .4s;
+            -o-transition: margin .4s;
+            transition: margin .4s;
+            -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+            border-radius: 8px; }
       .prd-detail-page-right .ems-prd-types .ems-prd-colors,
       .prd-detail-page-right .ems-prd-types .ems-prd-texture {
         display: -webkit-box;
@@ -4768,6 +4802,16 @@ ul.emosInfinite {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; }
+    .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk {
+      margin-top: 20px; }
+      .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk > div {
+        margin-bottom: 5px; }
+      .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk small .sStylerMainWrp .icon-checkbox {
+        width: 18px;
+        height: 18px; }
+      .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk small label {
+        font-weight: bold;
+        padding-right: 5px; }
   .ems-page-hierarchy .arcelik-contact .d-ems-flex .col4 {
     text-align: right;
     width: 100%; }
@@ -5551,39 +5595,42 @@ ul.emosInfinite {
     Mobil Teklif Al
 */
 .ems-mobi .offer-form-page {
-  padding: 22px 10px;
+  padding: 22px 20px !important;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   margin: 15px; }
-  .ems-mobi .offer-form-page .offer-form-inside .offer-badge {
-    font-size: 18px !important;
-    margin: 0 0 15px 0px; }
-    .ems-mobi .offer-form-page .offer-form-inside .offer-badge small {
-      font-weight: bold;
-      font-size: 22px; }
-  .ems-mobi .offer-form-page .offer-form-inside .all-offer-remove {
-    text-decoration: underline;
-    font-size: 15px;
-    margin-bottom: 20px; }
-  .ems-mobi .offer-form-page .offer-form-inside .all-offer li {
-    margin-bottom: 25px; }
-    .ems-mobi .offer-form-page .offer-form-inside .all-offer li a {
-      width: 22px;
-      height: 22px;
-      border-radius: 100%;
-      background-color: #000;
-      margin-right: 6px; }
-      .ems-mobi .offer-form-page .offer-form-inside .all-offer li a:before {
-        content: "-";
-        font-size: 30px;
-        line-height: 17px;
-        color: #fff;
-        padding-left: 6px; }
-      .ems-mobi .offer-form-page .offer-form-inside .all-offer li a span {
-        font-size: 15px; }
-  .ems-mobi .offer-form-page .ems-form-inner .zipUp {
+  .ems-mobi .offer-form-page .xmlIcerikHtml .offer-form-inside {
+    width: 100%;
+    margin: 0 0 30px 0; }
+    .ems-mobi .offer-form-page .xmlIcerikHtml .offer-form-inside .offer-badge {
+      font-size: 18px !important;
+      margin: 0 0 15px 0px; }
+      .ems-mobi .offer-form-page .xmlIcerikHtml .offer-form-inside .offer-badge small {
+        font-weight: bold;
+        font-size: 22px; }
+    .ems-mobi .offer-form-page .xmlIcerikHtml .offer-form-inside .all-offer-remove {
+      text-decoration: underline;
+      font-size: 15px;
+      margin-bottom: 20px; }
+    .ems-mobi .offer-form-page .xmlIcerikHtml .offer-form-inside .all-offer li {
+      margin-bottom: 25px; }
+      .ems-mobi .offer-form-page .xmlIcerikHtml .offer-form-inside .all-offer li a {
+        width: 22px;
+        height: 22px;
+        border-radius: 100%;
+        background-color: #000;
+        margin-right: 6px; }
+        .ems-mobi .offer-form-page .xmlIcerikHtml .offer-form-inside .all-offer li a:before {
+          content: "-";
+          font-size: 30px;
+          line-height: 17px;
+          color: #fff;
+          padding-left: 6px; }
+        .ems-mobi .offer-form-page .xmlIcerikHtml .offer-form-inside .all-offer li a span {
+          font-size: 15px; }
+  .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .zipUp {
     margin: 10px 0; }
-    .ems-mobi .offer-form-page .ems-form-inner .zipUp .zipUp-title {
+    .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .zipUp .zipUp-title {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -5595,15 +5642,15 @@ ul.emosInfinite {
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
       flex-direction: row;
-      width: 40%; }
-      .ems-mobi .offer-form-page .ems-form-inner .zipUp .zipUp-title .icon-dosya-ekle {
+      width: 50%; }
+      .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .zipUp .zipUp-title .icon-dosya-ekle {
         font-size: 25px;
         padding-right: 5px; }
-      .ems-mobi .offer-form-page .ems-form-inner .zipUp .zipUp-title .upload-label {
+      .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .zipUp .zipUp-title .upload-label {
         line-height: 2; }
-    .ems-mobi .offer-form-page .ems-form-inner .zipUp .zipUp-content {
+    .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .zipUp .zipUp-content {
       margin-top: 15px; }
-      .ems-mobi .offer-form-page .ems-form-inner .zipUp .zipUp-content .file-item {
+      .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .zipUp .zipUp-content .file-item {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -5611,11 +5658,11 @@ ul.emosInfinite {
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row; }
-        .ems-mobi .offer-form-page .ems-form-inner .zipUp .zipUp-content .file-item .logo {
+        .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .zipUp .zipUp-content .file-item .logo {
           margin-right: 15px; }
-          .ems-mobi .offer-form-page .ems-form-inner .zipUp .zipUp-content .file-item .logo img {
+          .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .zipUp .zipUp-content .file-item .logo img {
             width: 50px; }
-        .ems-mobi .offer-form-page .ems-form-inner .zipUp .zipUp-content .file-item div {
+        .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .zipUp .zipUp-content .file-item div {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -5626,32 +5673,32 @@ ul.emosInfinite {
           -webkit-box-pack: center;
           -ms-flex-pack: center;
           justify-content: center; }
-  .ems-mobi .offer-form-page .ems-form-inner .contact-file {
+  .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .contact-file {
     display: none; }
-  .ems-mobi .offer-form-page .ems-form-inner .col-3 .ems-field span, .ems-mobi .offer-form-page .ems-form-inner .col-3 .xmlForm #dvSehirBilgi span, .xmlForm .ems-mobi .offer-form-page .ems-form-inner .col-3 #dvSehirBilgi span {
+  .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-3 .ems-field span, .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-3 .xmlForm #dvSehirBilgi span, .xmlForm .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-3 #dvSehirBilgi span {
     display: block !important;
     padding-bottom: 10px; }
-    .ems-mobi .offer-form-page .ems-form-inner .col-3 .ems-field span:before, .ems-mobi .offer-form-page .ems-form-inner .col-3 .xmlForm #dvSehirBilgi span:before, .xmlForm .ems-mobi .offer-form-page .ems-form-inner .col-3 #dvSehirBilgi span:before {
+    .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-3 .ems-field span:before, .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-3 .xmlForm #dvSehirBilgi span:before, .xmlForm .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-3 #dvSehirBilgi span:before {
       content: "*"; }
-  .ems-mobi .offer-form-page .ems-form-inner .col-3 .ems-field input, .ems-mobi .offer-form-page .ems-form-inner .col-3 .xmlForm #dvSehirBilgi input, .xmlForm .ems-mobi .offer-form-page .ems-form-inner .col-3 #dvSehirBilgi input {
+  .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-3 .ems-field input, .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-3 .xmlForm #dvSehirBilgi input, .xmlForm .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-3 #dvSehirBilgi input {
     border: 1px solid #000;
     width: 75%;
     border-radius: 5px; }
-  .ems-mobi .offer-form-page .ems-form-inner .col-4 {
+  .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-4 {
     margin-top: 20px; }
-    .ems-mobi .offer-form-page .ems-form-inner .col-4 .contact-preference .icon-checkbox {
+    .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-4 .contact-preference .icon-checkbox {
       width: 18px;
       height: 18px; }
-    .ems-mobi .offer-form-page .ems-form-inner .col-4 .icon-checkbox-active {
+    .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-4 .icon-checkbox-active {
       width: 18px;
       height: 18px; }
-    .ems-mobi .offer-form-page .ems-form-inner .col-4 .contact-pre-kvkk {
+    .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-4 .contact-pre-kvkk {
       margin-top: 15px; }
-      .ems-mobi .offer-form-page .ems-form-inner .col-4 .contact-pre-kvkk small .sStylerMainWrp .sStylerMainWrp {
+      .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-4 .contact-pre-kvkk small .sStylerMainWrp {
         height: 18px;
         width: 18px; }
-      .ems-mobi .offer-form-page .ems-form-inner .col-4 .contact-pre-kvkk small .sStylerMainWrp label {
-        display: none; }
+        .ems-mobi .offer-form-page .xmlIcerikHtml .ems-form-inner .col-4 .contact-pre-kvkk small .sStylerMainWrp label {
+          display: none; }
   .ems-mobi .offer-form-page .xmlForm_btnGonder th {
     text-align: -webkit-right; }
     .ems-mobi .offer-form-page .xmlForm_btnGonder th .btnDefault {
@@ -5682,7 +5729,6 @@ ul.emosInfinite {
   -ms-flex-direction: column;
   flex-direction: column; }
   .xmlIcerikHtml .offer-form-inside {
-    width: 75%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5694,10 +5740,8 @@ ul.emosInfinite {
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-item-align: center;
-    align-self: center;
-    margin: 50px 0 30px 0; }
+    align-self: center; }
   .xmlIcerikHtml .ems-form-inner {
-    width: 75%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5728,7 +5772,6 @@ ul.emosInfinite {
         padding: 5px 20px;
         border: 1px solid #000;
         border-radius: 5px;
-        width: 12%;
         -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.28);
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.28);
         cursor: pointer; }
@@ -5752,13 +5795,16 @@ ul.emosInfinite {
       margin-top: 30px; }
       .xmlIcerikHtml .ems-form-inner .col-4 .contact-preference {
         margin-top: 10px; }
+        .xmlIcerikHtml .ems-form-inner .col-4 .contact-preference table td {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
       .xmlIcerikHtml .ems-form-inner .col-4 .contact-pre-kvkk {
         margin-top: 20px; }
         .xmlIcerikHtml .ems-form-inner .col-4 .contact-pre-kvkk div {
           margin-bottom: 5px; }
         .xmlIcerikHtml .ems-form-inner .col-4 .contact-pre-kvkk small span {
-          font-weight: bold;
-          padding-right: 5px; }
+          font-weight: bold; }
 
 .pageFormPreview_btnFormPreviewYazdir {
   margin-bottom: 50px;
@@ -5872,12 +5918,15 @@ ul.emosInfinite {
       height: 18px; }
     .offer-form-page .ems-form-inner .col-4 .contact-pre-kvkk {
       margin-top: 15px; }
-      .offer-form-page .ems-form-inner .col-4 .contact-pre-kvkk small .sStylerMainWrp .icon-checkbox {
-        height: 1rem;
-        width: 1rem; }
-      .offer-form-page .ems-form-inner .col-4 .contact-pre-kvkk small .sStylerMainWrp .icon-checkbox-active {
-        height: 1rem;
-        width: 1rem; }
+      .offer-form-page .ems-form-inner .col-4 .contact-pre-kvkk small .sStylerMainWrp {
+        width: 18px;
+        height: 18px; }
+        .offer-form-page .ems-form-inner .col-4 .contact-pre-kvkk small .sStylerMainWrp .icon-checkbox {
+          height: 18px;
+          width: 18px; }
+        .offer-form-page .ems-form-inner .col-4 .contact-pre-kvkk small .sStylerMainWrp .icon-checkbox-active {
+          height: 18px;
+          width: 18px; }
       .offer-form-page .ems-form-inner .col-4 .contact-pre-kvkk small label {
         display: none; }
   .offer-form-page .xmlForm_btnGonder th {
@@ -6269,7 +6318,8 @@ ul.emosInfinite {
     .kutuHeaderOzellikFiltre {
       background-color: inherit;
       padding: 15px 10px;
-      border-bottom: 1px solid #f5f5f5; }
+      border-bottom: 1px solid #f5f5f5;
+      display: none; }
     .kutuBodyOzellikFiltre {
       overflow: visible; }
     #dvUrunKiyaslamaOzellik {
@@ -6750,6 +6800,42 @@ ul.emosInfinite {
             font-size: 12px; }
     .popup-offer-animate {
       overflow: hidden; }
+    .ems-page-search .ga2 .kutuDefault.kutuKategori:before {
+      content: "KATEGORİLER";
+      padding-left: 30px;
+      font-size: 40px; }
+    .ems-page-search .ga2 .kutuDefault.kutuKategori .kutuBodyKategori ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      .ems-page-search .ga2 .kutuDefault.kutuKategori .kutuBodyKategori ul .s1::before {
+        display: none; }
+      .ems-page-search .ga2 .kutuDefault.kutuKategori .kutuBodyKategori ul .s1 > a {
+        display: none; }
+      .ems-page-search .ga2 .kutuDefault.kutuKategori .kutuBodyKategori ul .s1 > ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding-left: 0; }
+        .ems-page-search .ga2 .kutuDefault.kutuKategori .kutuBodyKategori ul .s1 > ul .s2 a {
+          padding: 20px;
+          border: 1px solid #dddddd;
+          width: 200px;
+          margin: 20px 0 0 30px;
+          border-radius: 5px;
+          text-align: center;
+          font-weight: bold;
+          line-height: 1; }
+      .ems-page-search .ga2 .kutuDefault.kutuKategori .kutuBodyKategori ul .s1 + li {
+        margin-top: 0; }
     .ems-page-search .ga2 .pageArama {
       padding: 50px 0 0px 50px; }
       .ems-page-search .ga2 .pageArama .pageDescDefault {
@@ -7054,7 +7140,8 @@ ul.emosInfinite {
             .emosInfinite .ems-prd-inner .ems-prd-image img {
               border: unset;
               border-radius: 5px;
-              max-width: unset; }
+              max-width: unset;
+              width: 100%; }
           .emosInfinite .ems-prd-inner .ems-prd-body {
             width: 100%;
             margin-top: 20px;
@@ -7166,6 +7253,31 @@ ul.emosInfinite {
         -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
         order: 3; }
+        .prd-detail-page-right .ems-prd-types .swiper-container {
+          height: unset; }
+          .prd-detail-page-right .ems-prd-types .swiper-container .ems-prd-types-title {
+            font-size: 22px; }
+          .prd-detail-page-right .ems-prd-types .swiper-container .swiper-inner .swiper-wrapper {
+            min-height: auto;
+            -webkit-box-align: self-start;
+            -ms-flex-align: self-start;
+            align-items: self-start; }
+            .prd-detail-page-right .ems-prd-types .swiper-container .swiper-inner .swiper-wrapper .swiper-slide {
+              max-width: 92px;
+              max-height: 69px;
+              padding-left: 0;
+              margin-right: 20px; }
+              .prd-detail-page-right .ems-prd-types .swiper-container .swiper-inner .swiper-wrapper .swiper-slide img {
+                width: 100%; }
+            .prd-detail-page-right .ems-prd-types .swiper-container .swiper-inner .swiper-wrapper .swiper-slide.slide-active img {
+              margin-bottom: 0; }
+          .prd-detail-page-right .ems-prd-types .swiper-container .swiper-button-prev,
+          .prd-detail-page-right .ems-prd-types .swiper-container .swiper-button-next {
+            display: none;
+            width: 50px !important;
+            height: 50px !important;
+            background-size: 25px !important;
+            top: 60%; }
         .prd-detail-page-right .ems-prd-types .ems-prd-colors > .ems-prd-types-title,
         .prd-detail-page-right .ems-prd-types .ems-prd-texture > .ems-prd-types-title {
           font-size: 22px; }
@@ -7217,6 +7329,61 @@ ul.emosInfinite {
           .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridRowUrunOzellik div.tableTitleUrunOzellik,
           .prd-detail-ozellik-set .urunOzellik > table > tbody > tr .gridAlternateUrunOzellik div.tableTitleUrunOzellik {
             font-size: 25px; }
+    .ems-page-product-detail-grid > div.ga1 .custom-category-dropdown {
+      display: none; }
+    .ems-page-product-detail-grid > div.ga5 .product-detail-documentation > div {
+      font-weight: bold;
+      font-size: 25px;
+      text-align: left;
+      margin-bottom: 20px; }
+    .ems-page-product-detail-grid > div.ga5 .product-detail-documentation li {
+      border-bottom: 1px solid #ddd;
+      padding: 12px 0; }
+      .ems-page-product-detail-grid > div.ga5 .product-detail-documentation li:last-child {
+        border-bottom: unset; }
+      .ems-page-product-detail-grid > div.ga5 .product-detail-documentation li .documentation-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+        .ems-page-product-detail-grid > div.ga5 .product-detail-documentation li .documentation-list-icon {
+          width: 7%; }
+        .ems-page-product-detail-grid > div.ga5 .product-detail-documentation li .documentation-list > div {
+          width: 83%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row; }
+          .ems-page-product-detail-grid > div.ga5 .product-detail-documentation li .documentation-list > div .documentation-title {
+            width: 18%;
+            -ms-flex-item-align: center;
+            align-self: center; }
+          .ems-page-product-detail-grid > div.ga5 .product-detail-documentation li .documentation-list > div .documentation-desc {
+            width: 65%;
+            -ms-flex-item-align: center;
+            align-self: center; }
+        .ems-page-product-detail-grid > div.ga5 .product-detail-documentation li .documentation-list .documentation-download {
+          width: 10%;
+          -ms-flex-item-align: center;
+          align-self: center;
+          border: 1px solid;
+          border-radius: 5px;
+          cursor: pointer;
+          text-align: center; }
+          .ems-page-product-detail-grid > div.ga5 .product-detail-documentation li .documentation-list .documentation-download a {
+            padding: 10px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center; }
     .about-us {
       margin-top: 80px;
       padding: 0 40px; }
@@ -7643,20 +7810,22 @@ ul.emosInfinite {
                 .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-preference table tr td .sStylerMainWrp svg {
                   height: 25px;
                   width: 15px; }
-          .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk > div {
-            margin: 20px 0 5px 0px; }
-          .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk small {
-            display: block; }
-            .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk small .sStylerMainWrp {
-              width: 15px; }
-              .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk small .sStylerMainWrp .icon-checkbox {
-                width: 15px;
-                height: 15px; }
-              .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk small .sStylerMainWrp .icon-checkbox-active {
-                width: 15px;
-                height: 15px; }
-            .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk small label {
-              display: none; }
+          .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk {
+            margin-top: 20px; }
+            .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk > div {
+              margin: 20px 0 5px 0px; }
+            .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk small {
+              display: block; }
+              .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk small .sStylerMainWrp {
+                width: 15px; }
+                .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk small .sStylerMainWrp .icon-checkbox {
+                  width: 15px;
+                  height: 15px; }
+                .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk small .sStylerMainWrp .icon-checkbox-active {
+                  width: 15px;
+                  height: 15px; }
+              .ems-page-hierarchy .arcelik-contact .d-ems-flex .col3 .contact-pre-kvkk small label {
+                display: none; }
         .ems-page-hierarchy .arcelik-contact .d-ems-flex .col4 {
           text-align: right;
           padding: 20px 0 0 50px; }
@@ -7672,7 +7841,7 @@ ul.emosInfinite {
               display: -ms-flexbox;
               display: flex;
               position: absolute;
-              top: -20px;
+              top: 15px;
               border: 1px solid #000;
               border-radius: 5px;
               cursor: pointer; }
@@ -7688,8 +7857,10 @@ ul.emosInfinite {
               display: flex;
               text-align: left;
               font-size: 18px; }
-            .ems-page-hierarchy .arcelik-contact .d-ems-flex .col4 .zipUp .zipUp-content .upload-files-group .file-item .logo img {
-              width: 50px; }
+            .ems-page-hierarchy .arcelik-contact .d-ems-flex .col4 .zipUp .zipUp-content .upload-files-group .file-item {
+              padding-top: 5px; }
+              .ems-page-hierarchy .arcelik-contact .d-ems-flex .col4 .zipUp .zipUp-content .upload-files-group .file-item .logo img {
+                width: 50px; }
           .ems-page-hierarchy .arcelik-contact .d-ems-flex .col4 .contact-file input:not([type=checkbox]) {
             display: none; }
       .ems-page-hierarchy .arcelik-contact .icon-radio {
@@ -8061,7 +8232,6 @@ ul.emosInfinite {
         align-self: center;
         margin: 50px 0 30px 0; }
       .xmlIcerikHtml .ems-form-inner {
-        width: 75%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;

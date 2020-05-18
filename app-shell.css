@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* autoprefixer grid: off */
 @font-face {
   font-family: "icomoon";
@@ -177,7 +178,8 @@
   .is-play .i-play::after {
     right: 38%; }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   display: inline-block;
@@ -201,6 +203,9 @@ svg.icon {
   fill: currentColor;
   vertical-align: middle;
   font-size: 32px; }
+
+.icon-solar:before {
+  content: "\e900"; }
 
 .icon-search:before {
   content: "\e905"; }
@@ -1148,6 +1153,8 @@ textarea {
   display: inline-block;
   vertical-align: -0.1em;
   margin-right: 7px;
+  width: 18px;
+  height: 18px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1807,7 +1814,8 @@ a.btnXMLFORM {
                   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.31);
                   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.31);
                   border: solid 1px #b51f2a; }
-                  .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div:hover > table > tbody > tr .suggest_urnsname_con b, .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div:hover > table > tbody > tr .suggest_urnsname_con span {
+                  .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div:hover > table > tbody > tr .suggest_urnsname_con b,
+                  .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div:hover > table > tbody > tr .suggest_urnsname_con span {
                     font-weight: bold; }
                 .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div > table > tbody > tr th {
                   width: 50px;
@@ -1815,10 +1823,7 @@ a.btnXMLFORM {
                 .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div > table > tbody > tr .suggest_urnprice_con {
                   display: none; }
                 .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div > table > tbody > tr .suggest_urnsname_con {
-                  text-align: center;
-                  -webkit-transform: translateX(-50px);
-                  -ms-transform: translateX(-50px);
-                  transform: translateX(-50px); }
+                  text-align: center; }
                   .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div > table > tbody > tr .suggest_urnsname_con b {
                     font-weight: 500; }
           .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .dvTumunuGoster {
@@ -2424,6 +2429,42 @@ a.btnXMLFORM {
             font-size: 12px; }
     .popup-offer-animate {
       overflow: hidden; }
+    .ems-page-search .ga2 .kutuDefault.kutuKategori:before {
+      content: "KATEGORİLER";
+      padding-left: 30px;
+      font-size: 40px; }
+    .ems-page-search .ga2 .kutuDefault.kutuKategori .kutuBodyKategori ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      .ems-page-search .ga2 .kutuDefault.kutuKategori .kutuBodyKategori ul .s1::before {
+        display: none; }
+      .ems-page-search .ga2 .kutuDefault.kutuKategori .kutuBodyKategori ul .s1 > a {
+        display: none; }
+      .ems-page-search .ga2 .kutuDefault.kutuKategori .kutuBodyKategori ul .s1 > ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        padding-left: 0; }
+        .ems-page-search .ga2 .kutuDefault.kutuKategori .kutuBodyKategori ul .s1 > ul .s2 a {
+          padding: 20px;
+          border: 1px solid #dddddd;
+          width: 200px;
+          margin: 20px 0 0 30px;
+          border-radius: 5px;
+          text-align: center;
+          font-weight: bold;
+          line-height: 1; }
+      .ems-page-search .ga2 .kutuDefault.kutuKategori .kutuBodyKategori ul .s1 + li {
+        margin-top: 0; }
     .ems-page-search .ga2 .pageArama {
       padding: 50px 0 0px 50px; }
       .ems-page-search .ga2 .pageArama .pageDescDefault {

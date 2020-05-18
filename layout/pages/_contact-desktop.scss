@@ -153,6 +153,7 @@
                     }
                 }
                 .contact-pre-kvkk {
+                    margin-top: 20px;
                     >div {
                         margin: 20px 0 5px 0px;
                     }
@@ -184,7 +185,7 @@
                     .zipUp-title {
                         display: flex;
                         position: absolute;
-                        top: -20px;
+                        top: 15px;
                         border: 1px solid #000;
                         border-radius: 5px;
                         cursor: pointer;
@@ -206,6 +207,7 @@
                         }
                         .upload-files-group {
                             .file-item {
+                                padding-top: 5px;
                                 .logo {
                                     img {
                                         width: 50px;

@@ -133,6 +133,24 @@
                         }
                     }
                 }
+                .contact-pre-kvkk {
+                    margin-top: 20px;
+                    >div {
+                        margin-bottom: 5px;
+                    }
+                    small {
+                        .sStylerMainWrp {
+                            .icon-checkbox {
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                        label {
+                            font-weight: bold;
+                            padding-right: 5px;
+                        }
+                    }
+                }
             }
             .col4 {
                 text-align: right;

@@ -36,126 +36,128 @@
 
 .ems-mobi {
     .offer-form-page {
-        padding: 22px 10px;
+        padding: 22px 20px !important;
         border: 1px solid rgba(0, 0, 0, 0.5);
         border-radius: 5px;
         margin: 15px;
-        .offer-form-inside {
-            .offer-badge {
-                font-size: 18px !important;
-                margin: 0 0 15px 0px;
-                small {
-                    font-weight: bold;
-                    font-size: 22px;
-                }
-            }
-            .all-offer-remove {
-                text-decoration: underline;
-                font-size: 15px;
-                margin-bottom: 20px;
-            }
-            .all-offer {
-                li {
-                    margin-bottom: 25px;
-                    a {
-                        width: 22px;
-                        height: 22px;
-                        border-radius: 100%;
-                        background-color: #000;
-                        margin-right: 6px;
-                        &:before {
-                            content: "-";
-                            font-size: 30px;
-                            line-height: 17px;
-                            color: #fff;
-                            padding-left: 6px;
-                        }
-                        span {
-                            font-size: 15px;
-                        }
+        .xmlIcerikHtml {
+            .offer-form-inside {
+                width: 100%;
+                margin: 0 0 30px 0;
+                .offer-badge {
+                    font-size: 18px !important;
+                    margin: 0 0 15px 0px;
+                    small {
+                        font-weight: bold;
+                        font-size: 22px;
                     }
                 }
-            }
-        }
-        .ems-form-inner {
-            .zipUp {
-                margin: 10px 0;
-                .zipUp-title {
-                    display: flex;
-                    padding: 5px 20px;
-                    border: 1px solid #000;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    flex-direction: row;
-                    width: 40%;
-                    .icon-dosya-ekle {
-                        font-size: 25px;
-                        padding-right: 5px;
-                    }
-                    .upload-label {
-                        line-height: 2;
-                    }
+                .all-offer-remove {
+                    text-decoration: underline;
+                    font-size: 15px;
+                    margin-bottom: 20px;
                 }
-                .zipUp-content {
-                    margin-top: 15px;
-                    .file-item {
-                        display: flex;
-                        flex-direction: row;
-                        .logo {
-                            margin-right: 15px;
-                            img {
-                                width: 50px;
+                .all-offer {
+                    li {
+                        margin-bottom: 25px;
+                        a {
+                            width: 22px;
+                            height: 22px;
+                            border-radius: 100%;
+                            background-color: #000;
+                            margin-right: 6px;
+                            &:before {
+                                content: "-";
+                                font-size: 30px;
+                                line-height: 17px;
+                                color: #fff;
+                                padding-left: 6px;
+                            }
+                            span {
+                                font-size: 15px;
                             }
                         }
-                        div {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                        }
                     }
                 }
             }
-            .contact-file {
-                display: none;
-            }
-            .col-3 {
-                .ems-field {
-                    span {
-                        display: block !important;
-                        padding-bottom: 10px;
-                        &:before {
-                            content: "*";
-                        }
-                    }
-                    input {
+            .ems-form-inner {
+                .zipUp {
+                    margin: 10px 0;
+                    .zipUp-title {
+                        display: flex;
+                        padding: 5px 20px;
                         border: 1px solid #000;
-                        width: 75%;
                         border-radius: 5px;
+                        cursor: pointer;
+                        flex-direction: row;
+                        width: 50%;
+                        .icon-dosya-ekle {
+                            font-size: 25px;
+                            padding-right: 5px;
+                        }
+                        .upload-label {
+                            line-height: 2;
+                        }
+                    }
+                    .zipUp-content {
+                        margin-top: 15px;
+                        .file-item {
+                            display: flex;
+                            flex-direction: row;
+                            .logo {
+                                margin-right: 15px;
+                                img {
+                                    width: 50px;
+                                }
+                            }
+                            div {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                            }
+                        }
                     }
                 }
-            }
-            .col-4 {
-                margin-top: 20px;
-                .contact-preference {
-                    .icon-checkbox {
+                .contact-file {
+                    display: none;
+                }
+                .col-3 {
+                    .ems-field {
+                        span {
+                            display: block !important;
+                            padding-bottom: 10px;
+                            &:before {
+                                content: "*";
+                            }
+                        }
+                        input {
+                            border: 1px solid #000;
+                            width: 75%;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+                .col-4 {
+                    margin-top: 20px;
+                    .contact-preference {
+                        .icon-checkbox {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                    .icon-checkbox-active {
                         width: 18px;
                         height: 18px;
                     }
-                }
-                .icon-checkbox-active {
-                    width: 18px;
-                    height: 18px;
-                }
-                .contact-pre-kvkk {
-                    margin-top: 15px;
-                    small {
-                        .sStylerMainWrp {
+                    .contact-pre-kvkk {
+                        margin-top: 15px;
+                        small {
                             .sStylerMainWrp {
                                 height: 18px;
                                 width: 18px;
-                            }
-                            label {
-                                display: none;
+                                label {
+                                    display: none;
+                                }
                             }
                         }
                     }
@@ -190,15 +192,13 @@
     display: flex;
     flex-direction: column;
     .offer-form-inside {
-        width: 75%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-self: center;
-        margin: 50px 0 30px 0;
     }
     .ems-form-inner {
-        width: 75%;
+        // width: 75%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -218,7 +218,7 @@
                     padding: 5px 20px;
                     border: 1px solid #000;
                     border-radius: 5px;
-                    width: 12%;
+                    //width: 12%;
                     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.28);
                     cursor: pointer;
                     i {
@@ -255,6 +255,11 @@
             margin-top: 30px;
             .contact-preference {
                 margin-top: 10px;
+                table {
+                    td {
+                        display: flex;
+                    }
+                }
             }
             .contact-pre-kvkk {
                 margin-top: 20px;
@@ -264,7 +269,6 @@
                 small {
                     span {
                         font-weight: bold;
-                        padding-right: 5px;
                     }
                 }
             }
@@ -400,13 +404,15 @@
                 margin-top: 15px;
                 small {
                     .sStylerMainWrp {
+                        width: 18px;
+                        height: 18px;
                         .icon-checkbox {
-                            height: 1rem;
-                            width: 1rem;
+                            height: 18px;
+                            width: 18px;
                         }
                         .icon-checkbox-active {
-                            height: 1rem;
-                            width: 1rem;
+                            height: 18px;
+                            width: 18px;
                         }
                     }
                     label {

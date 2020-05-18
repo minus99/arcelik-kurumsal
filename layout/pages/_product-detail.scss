@@ -98,6 +98,23 @@
         }
         .ems-prd-types {
             margin-top: 30px;
+            >.swiper-container {
+                margin-bottom: 25px;
+                .ems-prd-types-title {
+                    width: 100%;
+                    font-size: 17px;
+                    margin-bottom: 10px;
+                }
+                .swiper-slide {
+                    width: 120px;
+                    height: 80px;
+                    img {
+                        transition: margin .4s;
+                        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.6);
+                        border-radius: 8px;
+                    }
+                }
+            }
             .ems-prd-colors,
             .ems-prd-texture {
                 display: flex;

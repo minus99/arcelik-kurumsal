@@ -65,6 +65,40 @@
         }
         .ems-prd-types {
             order: 3;
+            .swiper-container {
+                height: unset;
+                .ems-prd-types-title {
+                    font-size: 22px;
+                }
+                .swiper-inner {
+                    .swiper-wrapper {
+                        min-height: auto;
+                        align-items: self-start;
+                        .swiper-slide {
+                            max-width: 92px;
+                            max-height: 69px;
+                            padding-left: 0;
+                            margin-right: 20px;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .swiper-slide.slide-active {
+                            img {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                .swiper-button-prev,
+                .swiper-button-next {
+                    display: none;
+                    width: 50px !important;
+                    height: 50px !important;
+                    background-size: 25px !important;
+                    top: 60%;
+                }
+            }
             .ems-prd-colors,
             .ems-prd-texture {
                 >.ems-prd-types-title {
@@ -147,6 +181,68 @@
                                     td {
                                         &:nth-child(2) {}
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ems-page-product-detail {
+    &-grid {
+        >div {
+            &.ga1 {
+                .custom-category-dropdown {
+                    display: none;
+                }
+            }
+            &.ga5 {
+                .product-detail-documentation {
+                    >div {
+                        font-weight: bold;
+                        font-size: 25px;
+                        text-align: left;
+                        margin-bottom: 20px;
+                    }
+                    li {
+                        border-bottom: 1px solid #ddd;
+                        padding: 12px 0;
+                        &:last-child {
+                            border-bottom: unset;
+                        }
+                        .documentation-list {
+                            display: flex;
+                            flex-direction: row;
+                            &-icon {
+                                width: 7%;
+                            }
+                            >div {
+                                width: 83%;
+                                display: flex;
+                                flex-direction: row;
+                                .documentation-title {
+                                    width: 18%;
+                                    align-self: center;
+                                }
+                                .documentation-desc {
+                                    width: 65%;
+                                    align-self: center;
+                                }
+                            }
+                            .documentation-download {
+                                width: 10%;
+                                align-self: center;
+                                border: 1px solid;
+                                border-radius: 5px;
+                                cursor: pointer;
+                                text-align: center;
+                                a {
+                                    padding: 10px;
+                                    display: flex;
+                                    justify-content: center;
                                 }
                             }
                         }
