@@ -1781,7 +1781,7 @@ a.btnXMLFORM {
               font-size: 18px; }
             .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .cat .sHolder {
               max-height: 150px;
-              overflow-y: scroll; }
+              overflow-y: auto; }
               .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .cat .sHolder > div {
                 margin: 15px 0px;
                 font-size: 15px; }
@@ -1798,7 +1798,7 @@ a.btnXMLFORM {
             .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder {
               margin-top: 15px;
               max-height: 240px;
-              overflow-y: scroll; }
+              overflow-y: auto; }
               .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div {
                 border: 1px solid transparent;
                 border-top: 1px solid #c9c9c9;

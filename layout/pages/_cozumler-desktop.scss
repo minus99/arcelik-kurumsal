@@ -19,6 +19,7 @@
             width: 25%;
             img {
                 display: block;
+                width: 91px;
             }
             span {
                 font-size: 22px;
@@ -124,6 +125,11 @@
         height: 246px;
         align-self: center;
         padding: 45px 27px;
+        .arc-referans-projects {
+            span {
+                font-size: 25px;
+            }
+        }
         header {
             font-weight: bold;
             font-size: 25px;
@@ -243,7 +249,7 @@
         }
     }
     .project-detail-solution {
-        margin-top: 150px;
+        margin-top: 50px;
         &-header {
             align-content: center;
             position: relative;

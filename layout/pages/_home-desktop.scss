@@ -89,6 +89,9 @@
         order: 3;
         .swiper-wrapper {
             min-height: 520px;
+            .ref-name {
+                display: block;
+            }
         }
         .swiper-button-next,
         .swiper-button-prev {

@@ -3542,7 +3542,7 @@ ul.menuKategori b {
               font-size: 18px; }
             .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .cat .sHolder {
               max-height: 150px;
-              overflow-y: scroll; }
+              overflow-y: auto; }
               .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .cat .sHolder > div {
                 margin: 15px 0px;
                 font-size: 15px; }
@@ -3559,7 +3559,7 @@ ul.menuKategori b {
             .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder {
               margin-top: 15px;
               max-height: 240px;
-              overflow-y: scroll; }
+              overflow-y: auto; }
               .mini-search-sub .search-input .searchSuggestDiv .searchSuggestDivHolder .prd .sHolder > div {
                 border: 1px solid transparent;
                 border-top: 1px solid #c9c9c9;
@@ -3736,7 +3736,8 @@ ul.menuKategori b {
     text-transform: uppercase; }
   .section-cover .section-desc {
     text-align: center;
-    font-weight: 300; }
+    font-size: 20px;
+    font-weight: inherit; }
 
 .entegre-projects {
   display: -webkit-box;
@@ -3909,7 +3910,7 @@ ul.menuKategori b {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
       .referanslar-left ul li .ref-name {
-        display: block;
+        display: block !important;
         font-size: 16px; }
       .referanslar-left ul li .ref-types {
         font-size: 13px;
@@ -5268,6 +5269,10 @@ ul.emosInfinite {
         color: #717171;
         text-decoration: underline; }
 
+.answer-references .referanslar-left,
+.answer-references .referanslar-right {
+  display: none; }
+
 /* Entegre Projeler */
 .tip-0 #tip-0 {
   color: black; }
@@ -5407,12 +5412,26 @@ ul.emosInfinite {
     border-radius: 6px;
     border: solid 1px #ea1323;
     padding: 15px; }
+    .arc-entegre-body .arc-referans-proje .arc-referans-projects {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-top: 5px; }
+      .arc-entegre-body .arc-referans-proje .arc-referans-projects span {
+        font-size: 18px; }
     .arc-entegre-body .arc-referans-proje header {
       font-size: 16px; }
     .arc-entegre-body .arc-referans-proje p {
       font-size: 20px;
       width: 180px;
       line-height: 40px; }
+    .arc-entegre-body .arc-referans-proje span {
+      font-size: 30px;
+      color: #ddd; }
     .arc-entegre-body .arc-referans-proje .arc-referans-link {
       position: absolute;
       right: -24px;
@@ -6915,6 +6934,8 @@ ul.emosInfinite {
         order: 3; }
         .referanslar-right .swiper-wrapper {
           min-height: 520px; }
+          .referanslar-right .swiper-wrapper .ref-name {
+            display: block; }
         .referanslar-right .swiper-button-next,
         .referanslar-right .swiper-button-prev {
           -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -7459,7 +7480,8 @@ ul.emosInfinite {
     .cozum-icons li {
       width: 25%; }
       .cozum-icons li img {
-        display: block; }
+        display: block;
+        width: 91px; }
       .cozum-icons li span {
         font-size: 22px;
         font-weight: 500; }
@@ -7537,6 +7559,8 @@ ul.emosInfinite {
         -ms-flex-item-align: center;
         align-self: center;
         padding: 45px 27px; }
+        .arc-entegre-body .arc-referans-proje .arc-referans-projects span {
+          font-size: 25px; }
         .arc-entegre-body .arc-referans-proje header {
           font-weight: bold;
           font-size: 25px;
@@ -7617,7 +7641,7 @@ ul.emosInfinite {
           .project-detail-page .project-detail-slider .referanslar-right .swiper-button-next {
             right: 0px; }
       .project-detail-page .project-detail-solution {
-        margin-top: 150px; }
+        margin-top: 50px; }
         .project-detail-page .project-detail-solution-header {
           -ms-flex-line-pack: center;
           align-content: center;
